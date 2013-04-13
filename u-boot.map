@@ -1,0 +1,2691 @@
+Archive member included because of file (symbol)
+
+lib_mips/libmips.a(board.o)   cpu/mips/start.o (board_init_r)
+net/libnet.a(net.o)           lib_mips/libmips.a(board.o) (copy_filename)
+net/libnet.a(tftp.o)          net/libnet.a(net.o) (TftpStart)
+net/libnet.a(bootp.o)         net/libnet.a(net.o) (BootpRequest)
+net/libnet.a(rarp.o)          net/libnet.a(net.o) (RarpRequest)
+net/libnet.a(eth.o)           net/libnet.a(net.o) (eth_get_dev)
+net/libnet.a(nfs.o)           net/libnet.a(net.o) (NfsStart)
+drivers/nand/libnand.a(nand.o)
+                              lib_mips/libmips.a(board.o) (nand_init)
+drivers/nand/libnand.a(nand_base_jz4770.o)
+                              drivers/nand/libnand.a(nand.o) (nand_scan)
+drivers/nand/libnand.a(nand_ids.o)
+                              drivers/nand/libnand.a(nand_base_jz4770.o) (get_flash_num)
+drivers/nand/libnand.a(nand_ecc.o)
+                              drivers/nand/libnand.a(nand_base_jz4770.o) (nand_calculate_ecc)
+drivers/nand/libnand.a(nand_bbt.o)
+                              drivers/nand/libnand.a(nand_base_jz4770.o) (nand_isbad_bbt)
+common/libcommon.a(main.o)    lib_mips/libmips.a(board.o) (main_loop)
+common/libcommon.a(cmd_autoscript.o)
+                              (__u_boot_cmd_autoscr)
+common/libcommon.a(cmd_bdinfo.o)
+                              (__u_boot_cmd_bdinfo)
+common/libcommon.a(cmd_boot.o)
+                              (__u_boot_cmd_go)
+common/libcommon.a(cmd_bootm.o)
+                              common/libcommon.a(cmd_autoscript.o) (header)
+common/libcommon.a(cmd_console.o)
+                              (__u_boot_cmd_coninfo)
+common/libcommon.a(cmd_flash.o)
+                              (__u_boot_cmd_flinfo)
+common/libcommon.a(cmd_itest.o)
+                              (__u_boot_cmd_itest)
+common/libcommon.a(cmd_load.o)
+                              (__u_boot_cmd_loads)
+common/libcommon.a(cmd_mem.o)
+                              common/libcommon.a(cmd_itest.o) (cmd_get_data_size)
+common/libcommon.a(cmd_misc.o)
+                              (__u_boot_cmd_sleep)
+common/libcommon.a(cmd_msc.o)
+                              (__u_boot_cmd_msc)
+common/libcommon.a(cmd_nand.o)
+                              (__u_boot_cmd_nand)
+common/libcommon.a(cmd_net.o)
+                              (__u_boot_cmd_bootp)
+common/libcommon.a(cmd_nvedit.o)
+                              lib_mips/libmips.a(board.o) (getenv_r)
+common/libcommon.a(command.o)
+                              common/libcommon.a(main.o) (find_cmd)
+common/libcommon.a(console.o)
+                              lib_mips/libmips.a(board.o) (printf)
+common/libcommon.a(devices.o)
+                              common/libcommon.a(cmd_console.o) (devlist)
+common/libcommon.a(dlmalloc.o)
+                              lib_mips/libmips.a(board.o) (malloc_bin_reloc)
+common/libcommon.a(env_common.o)
+                              common/libcommon.a(cmd_nvedit.o) (env_get_addr)
+common/libcommon.a(env_msc.o)
+                              common/libcommon.a(env_common.o) (env_get_char_spec)
+common/libcommon.a(exports.o)
+                              lib_mips/libmips.a(board.o) (jumptable_init)
+common/libcommon.a(flash.o)   common/libcommon.a(cmd_load.o) (addr2info)
+common/libcommon.a(lists.o)   common/libcommon.a(cmd_console.o) (ListGetPtrToItem)
+common/libcommon.a(s_record.o)
+                              common/libcommon.a(cmd_load.o) (srec_decode)
+common/libcommon.a(xyzModem.o)
+                              common/libcommon.a(cmd_load.o) (xyzModem_error)
+common/libcommon.a(crc16.o)   common/libcommon.a(xyzModem.o) (cyg_crc16)
+lib_generic/libgeneric.a(crc32.o)
+                              common/libcommon.a(cmd_autoscript.o) (crc32)
+lib_generic/libgeneric.a(display_options.o)
+                              lib_mips/libmips.a(board.o) (print_size)
+lib_generic/libgeneric.a(string.o)
+                              net/libnet.a(nfs.o) (strcat)
+lib_generic/libgeneric.a(vsprintf.o)
+                              lib_mips/libmips.a(board.o) (simple_strtoul)
+lib_generic/libgeneric.a(zlib.o)
+                              common/libcommon.a(cmd_bootm.o) (inflateEnd)
+lib_generic/libgeneric.a(ctype.o)
+                              lib_generic/libgeneric.a(vsprintf.o) (_ctype)
+board/pisces/libpisces.a(pisces.o)
+                              lib_mips/libmips.a(board.o) (checkboard)
+board/pisces/libpisces.a(flash.o)
+                              common/libcommon.a(flash.o) (write_buff)
+cpu/mips/libmips.a(jz_serial.o)
+                              common/libcommon.a(cmd_load.o) (serial_setbrg)
+cpu/mips/libmips.a(cpu.o)     common/libcommon.a(cmd_load.o) (flush_cache)
+cpu/mips/libmips.a(interrupts.o)
+                              common/libcommon.a(cmd_bootm.o) (enable_interrupts)
+cpu/mips/libmips.a(jz4770.o)  lib_mips/libmips.a(board.o) (timer_init)
+cpu/mips/libmips.a(jz4770_nand.o)
+                              drivers/nand/libnand.a(nand.o) (board_nand_select_device)
+cpu/mips/libmips.a(jz4770_eth.o)
+                              net/libnet.a(eth.o) (jz_enet_initialize)
+cpu/mips/libmips.a(jz4770_ddr.o)
+                              lib_mips/libmips.a(board.o) (initdram)
+cpu/mips/libmips.a(jz_mddr_init.o)
+                              cpu/mips/libmips.a(jz4770_ddr.o) (ddr_mem_init)
+lib_mips/libmips.a(mips_linux.o)
+                              common/libcommon.a(cmd_bootm.o) (do_bootm_linux)
+drivers/nand/libnand.a(nand_util.o)
+                              common/libcommon.a(cmd_nand.o) (nand_lock)
+/opt/mipseltools-gcc412-glibc261/lib/gcc/mipsel-linux/4.1.2/libgcc.a(_udivdi3.o)
+                              drivers/nand/libnand.a(nand_util.o) (__udivdi3)
+/opt/mipseltools-gcc412-glibc261/lib/gcc/mipsel-linux/4.1.2/libgcc.a(_clz.o)
+                              /opt/mipseltools-gcc412-glibc261/lib/gcc/mipsel-linux/4.1.2/libgcc.a(_udivdi3.o) (__clz_tab)
+
+分配公共符号
+公共符号            大小              文件
+
+dp_last_size        0x4               common/libcommon.a(cmd_mem.o)
+console_buffer      0x100             common/libcommon.a(main.o)
+NetArpWaitTry       0x4               net/libnet.a(net.o)
+NetArpWaitPacketMAC
+                    0x4               net/libnet.a(net.o)
+flash_info          0x28c             board/pisces/libpisces.a(flash.o)
+NetOurEther         0x6               net/libnet.a(net.o)
+NetOurIP            0x4               net/libnet.a(net.o)
+NetPingIP           0x4               net/libnet.a(net.o)
+NetServerIP         0x4               net/libnet.a(net.o)
+monitor_flash_len   0x4               lib_mips/libmips.a(board.o)
+___strtok           0x4               lib_generic/libgeneric.a(string.o)
+NetArpWaitTxPacketSize
+                    0x4               net/libnet.a(net.o)
+NetArpWaitReplyIP   0x4               net/libnet.a(net.o)
+NetRxPackets        0x40              net/libnet.a(net.o)
+NetArpWaitTxPacket  0x4               net/libnet.a(net.o)
+NetArpWaitPacketIP  0x4               net/libnet.a(net.o)
+NetState            0x4               net/libnet.a(net.o)
+BootpTry            0x4               net/libnet.a(bootp.o)
+nand_info           0x8d0             drivers/nand/libnand.a(nand.o)
+BootFile            0x80              net/libnet.a(net.o)
+dp_last_addr        0x4               common/libcommon.a(cmd_mem.o)
+his_pad_char        0x1               common/libcommon.a(cmd_load.o)
+os_data_count       0x4               common/libcommon.a(cmd_load.o)
+RarpTry             0x4               net/libnet.a(rarp.o)
+mm_last_size        0x4               common/libcommon.a(cmd_mem.o)
+os_data_init        0x4               common/libcommon.a(cmd_load.o)
+mm_last_addr        0x4               common/libcommon.a(cmd_mem.o)
+NetIPID             0x4               net/libnet.a(net.o)
+send_ptr            0x4               common/libcommon.a(cmd_load.o)
+BootpID             0x4               net/libnet.a(bootp.o)
+NetRxPkt            0x4               net/libnet.a(net.o)
+os_data_header      0x20              common/libcommon.a(cmd_load.o)
+os_data_char        0x4               common/libcommon.a(cmd_load.o)
+NetArpWaitPacketBuf
+                    0x620             net/libnet.a(net.o)
+his_eol             0x1               common/libcommon.a(cmd_load.o)
+header              0x40              common/libcommon.a(cmd_bootm.o)
+NetRxPktLen         0x4               net/libnet.a(net.o)
+his_quote           0x1               common/libcommon.a(cmd_load.o)
+NetBootFileXferSize
+                    0x4               net/libnet.a(net.o)
+PktBuf              0x6620            net/libnet.a(net.o)
+send_parms          0x14              common/libcommon.a(cmd_load.o)
+his_pad_count       0x4               common/libcommon.a(cmd_load.o)
+NetArpWaitTimerStart
+                    0x4               net/libnet.a(net.o)
+
+Discarded input sections
+
+ .reginfo       0x0000000000000000        0x0 lib_mips/libmips.a(board.o)
+ .reginfo       0x0000000000000000        0x0 net/libnet.a(net.o)
+ .reginfo       0x0000000000000000        0x0 net/libnet.a(tftp.o)
+ .reginfo       0x0000000000000000        0x0 net/libnet.a(bootp.o)
+ .reginfo       0x0000000000000000        0x0 net/libnet.a(rarp.o)
+ .reginfo       0x0000000000000000        0x0 net/libnet.a(eth.o)
+ .reginfo       0x0000000000000000        0x0 net/libnet.a(nfs.o)
+ .reginfo       0x0000000000000000        0x0 drivers/nand/libnand.a(nand.o)
+ .reginfo       0x0000000000000000        0x0 drivers/nand/libnand.a(nand_base_jz4770.o)
+ .reginfo       0x0000000000000000        0x0 drivers/nand/libnand.a(nand_ids.o)
+ .reginfo       0x0000000000000000        0x0 drivers/nand/libnand.a(nand_ecc.o)
+ .reginfo       0x0000000000000000        0x0 drivers/nand/libnand.a(nand_bbt.o)
+ .reginfo       0x0000000000000000        0x0 common/libcommon.a(main.o)
+ .reginfo       0x0000000000000000        0x0 common/libcommon.a(cmd_autoscript.o)
+ .reginfo       0x0000000000000000        0x0 common/libcommon.a(cmd_bdinfo.o)
+ .reginfo       0x0000000000000000        0x0 common/libcommon.a(cmd_boot.o)
+ .reginfo       0x0000000000000000        0x0 common/libcommon.a(cmd_bootm.o)
+ .reginfo       0x0000000000000000        0x0 common/libcommon.a(cmd_console.o)
+ .reginfo       0x0000000000000000        0x0 common/libcommon.a(cmd_flash.o)
+ .reginfo       0x0000000000000000        0x0 common/libcommon.a(cmd_itest.o)
+ .reginfo       0x0000000000000000        0x0 common/libcommon.a(cmd_load.o)
+ .reginfo       0x0000000000000000        0x0 common/libcommon.a(cmd_mem.o)
+ .reginfo       0x0000000000000000        0x0 common/libcommon.a(cmd_misc.o)
+ .reginfo       0x0000000000000000        0x0 common/libcommon.a(cmd_msc.o)
+ .reginfo       0x0000000000000000        0x0 common/libcommon.a(cmd_nand.o)
+ .reginfo       0x0000000000000000        0x0 common/libcommon.a(cmd_net.o)
+ .reginfo       0x0000000000000000        0x0 common/libcommon.a(cmd_nvedit.o)
+ .reginfo       0x0000000000000000        0x0 common/libcommon.a(command.o)
+ .reginfo       0x0000000000000000        0x0 common/libcommon.a(console.o)
+ .reginfo       0x0000000000000000        0x0 common/libcommon.a(devices.o)
+ .reginfo       0x0000000000000000        0x0 common/libcommon.a(dlmalloc.o)
+ .reginfo       0x0000000000000000        0x0 common/libcommon.a(env_common.o)
+ .reginfo       0x0000000000000000        0x0 common/libcommon.a(env_msc.o)
+ .reginfo       0x0000000000000000        0x0 common/libcommon.a(exports.o)
+ .reginfo       0x0000000000000000        0x0 common/libcommon.a(flash.o)
+ .reginfo       0x0000000000000000        0x0 common/libcommon.a(lists.o)
+ .reginfo       0x0000000000000000        0x0 common/libcommon.a(s_record.o)
+ .reginfo       0x0000000000000000        0x0 common/libcommon.a(xyzModem.o)
+ .reginfo       0x0000000000000000        0x0 common/libcommon.a(crc16.o)
+ .reginfo       0x0000000000000000        0x0 lib_generic/libgeneric.a(crc32.o)
+ .reginfo       0x0000000000000000        0x0 lib_generic/libgeneric.a(display_options.o)
+ .reginfo       0x0000000000000000        0x0 lib_generic/libgeneric.a(string.o)
+ .reginfo       0x0000000000000000        0x0 lib_generic/libgeneric.a(vsprintf.o)
+ .reginfo       0x0000000000000000        0x0 lib_generic/libgeneric.a(zlib.o)
+ .reginfo       0x0000000000000000        0x0 lib_generic/libgeneric.a(ctype.o)
+ .reginfo       0x0000000000000000        0x0 board/pisces/libpisces.a(pisces.o)
+ .reginfo       0x0000000000000000        0x0 board/pisces/libpisces.a(flash.o)
+ .reginfo       0x0000000000000000        0x0 cpu/mips/libmips.a(jz_serial.o)
+ .reginfo       0x0000000000000000        0x0 cpu/mips/libmips.a(cpu.o)
+ .reginfo       0x0000000000000000        0x0 cpu/mips/libmips.a(interrupts.o)
+ .reginfo       0x0000000000000000        0x0 cpu/mips/libmips.a(jz4770.o)
+ .reginfo       0x0000000000000000        0x0 cpu/mips/libmips.a(jz4770_nand.o)
+ .reginfo       0x0000000000000000        0x0 cpu/mips/libmips.a(jz4770_eth.o)
+ .reginfo       0x0000000000000000        0x0 cpu/mips/libmips.a(jz4770_ddr.o)
+ .reginfo       0x0000000000000000        0x0 cpu/mips/libmips.a(jz_mddr_init.o)
+ .reginfo       0x0000000000000000        0x0 lib_mips/libmips.a(mips_linux.o)
+ .reginfo       0x0000000000000000        0x0 drivers/nand/libnand.a(nand_util.o)
+ .reginfo       0x0000000000000000        0x0 /opt/mipseltools-gcc412-glibc261/lib/gcc/mipsel-linux/4.1.2/libgcc.a(_udivdi3.o)
+ .reginfo       0x0000000000000000        0x0 /opt/mipseltools-gcc412-glibc261/lib/gcc/mipsel-linux/4.1.2/libgcc.a(_clz.o)
+
+内存配置
+
+名称           来源             长度             属性
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+                0x0000000000000000                . = 0x0
+                0x0000000000000000                . = ALIGN (0x4)
+
+.text           0x0000000080100200    0x263c0
+ *(.text)
+ .text          0x0000000080100200      0x160 cpu/mips/start.o
+                0x0000000080100230                relocate_code
+                0x0000000080100200                _start
+ .text          0x0000000080100360      0x680 lib_mips/libmips.a(board.o)
+                0x00000000801003b0                hang
+                0x0000000080100594                board_init_r
+                0x0000000080100360                sbrk
+                0x00000000801008a0                board_init_f
+ .text          0x00000000801009e0     0x1e00 net/libnet.a(net.o)
+                0x0000000080100ca0                getenv_IPaddr
+                0x0000000080100a60                NetCksumOk
+                0x0000000080101400                NetSetTimeout
+                0x0000000080100aa0                copy_filename
+                0x0000000080102094                NetEthHdrSize
+                0x0000000080100cdc                ip_to_string
+                0x0000000080101854                ArpTimeoutCheck
+                0x0000000080102148                NetReceive
+                0x0000000080100bcc                string_to_ip
+                0x0000000080101474                NetSendUDPPacket
+                0x0000000080100d60                print_IPaddr
+                0x0000000080100f2c                NetSetEther
+                0x0000000080101928                NetLoop
+                0x0000000080101088                ArpRequest
+                0x000000008010201c                VLAN_to_string
+                0x0000000080100b88                getenv_VLAN
+                0x0000000080100a1c                NetCksum
+                0x0000000080100db0                NetSetIP
+                0x0000000080100b10                string_to_VLAN
+                0x00000000801016b4                NetStartAgain
+                0x0000000080100a04                NetSetHandler
+                0x0000000080101214                PingSend
+                0x0000000080101070                NetSendPacket
+ .text          0x00000000801027e0      0x970 net/libnet.a(tftp.o)
+                0x00000000801029f4                TftpStart
+ .text          0x0000000080103150      0xda0 net/libnet.a(bootp.o)
+                0x000000008010384c                DhcpRequest
+                0x0000000080103574                BootpRequest
+ .text          0x0000000080103ef0      0x270 net/libnet.a(rarp.o)
+                0x0000000080103ef0                RarpRequest
+ .text          0x0000000080104160      0xa40 net/libnet.a(eth.o)
+                0x0000000080104658                eth_get_dev_by_name
+                0x00000000801041d0                eth_halt
+                0x00000000801046c8                eth_register
+                0x0000000080104160                eth_get_dev
+                0x0000000080104394                eth_try_another
+                0x0000000080104544                eth_set_enetaddr
+                0x00000000801047c0                eth_initialize
+                0x00000000801042c8                eth_set_current
+                0x0000000080104264                eth_rx
+                0x0000000080104178                eth_get_dev_index
+                0x0000000080104480                eth_init
+                0x0000000080104298                eth_get_name
+                0x0000000080104228                eth_send
+ .text          0x0000000080104ba0     0x1500 net/libnet.a(nfs.o)
+                0x0000000080105d44                NfsStart
+ .text          0x00000000801060a0      0x100 drivers/nand/libnand.a(nand.o)
+                0x00000000801060a0                nand_init
+ .text          0x00000000801061a0     0x4060 drivers/nand/libnand.a(nand_base_jz4770.o)
+                0x0000000080106c48                nand_read_raw
+                0x00000000801069f0                buffer_dump
+                0x0000000080109458                nand_scan
+                0x0000000080108e7c                nand_erase_nand
+                0x000000008010695c                nand_release
+ .text          0x000000008010a200       0x10 drivers/nand/libnand.a(nand_ids.o)
+                0x000000008010a200                get_flash_num
+ .text          0x000000008010a210      0x320 drivers/nand/libnand.a(nand_ecc.o)
+                0x000000008010a350                nand_correct_data
+                0x000000008010a210                nand_calculate_ecc
+ .text          0x000000008010a530     0x1f20 drivers/nand/libnand.a(nand_bbt.o)
+                0x000000008010a620                nand_isbad_bbt
+                0x000000008010c330                nand_default_bbt
+                0x000000008010b31c                nand_update_bbt
+                0x000000008010bce8                nand_scan_bbt
+ .text          0x000000008010c450      0xde0 common/libcommon.a(main.o)
+                0x000000008010c450                run_command
+                0x000000008010ca18                do_run
+                0x000000008010cccc                readline
+                0x000000008010d000                main_loop
+ .text          0x000000008010d230      0x3b0 common/libcommon.a(cmd_autoscript.o)
+                0x000000008010d560                do_autoscript
+                0x000000008010d230                autoscript
+ .text          0x000000008010d5e0      0x1e0 common/libcommon.a(cmd_bdinfo.o)
+                0x000000008010d608                do_bdinfo
+ .text          0x000000008010d7c0      0x100 common/libcommon.a(cmd_boot.o)
+                0x000000008010d7c0                do_go
+ .text          0x000000008010d8c0     0x1560 common/libcommon.a(cmd_bootm.o)
+                0x000000008010db10                print_image_hdr
+                0x000000008010e2cc                do_bootd
+                0x000000008010d8c0                gunzip
+                0x000000008010e550                do_bootm
+                0x000000008010e1f4                do_iminfo
+ .text          0x000000008010ee20      0x180 common/libcommon.a(cmd_console.o)
+                0x000000008010ee20                do_coninfo
+ .text          0x000000008010efa0      0xf60 common/libcommon.a(cmd_flash.o)
+                0x000000008010f74c                do_flinfo
+                0x000000008010f664                flash_sect_erase
+                0x000000008010fa98                do_protect
+                0x000000008010f80c                do_flerase
+                0x000000008010f19c                flash_sect_protect
+ .text          0x000000008010ff00      0x490 common/libcommon.a(cmd_itest.o)
+                0x000000008010ffe0                binary_test
+                0x0000000080110270                do_itest
+ .text          0x0000000080110390     0x15b0 common/libcommon.a(cmd_load.o)
+                0x0000000080110488                k_data_init
+                0x0000000080110658                s1_sendpacket
+                0x00000000801106b4                handle_send_packet
+                0x00000000801104f8                k_data_restore
+                0x00000000801109a4                send_nack
+                0x0000000080110b08                do_load_serial_bin
+                0x0000000080110548                k_data_char
+                0x00000000801103cc                chk1
+                0x00000000801104a8                k_data_save
+                0x0000000080110390                ktrans
+                0x00000000801105f0                send_pad
+                0x0000000080110a30                send_ack
+                0x00000000801113c0                do_load_serial
+ .text          0x0000000080111940     0x1570 common/libcommon.a(cmd_mem.o)
+                0x0000000080111b48                do_mem_base
+                0x00000000801129e8                do_mem_mw
+                0x0000000080111940                map_mem_tlb
+                0x0000000080111bdc                do_mem_crc
+                0x0000000080112324                do_mem_nm
+                0x000000008011236c                do_mem_mm
+                0x0000000080112564                do_mem_cp
+                0x0000000080111d34                do_mem_mtest
+                0x0000000080112780                do_mem_cmp
+                0x0000000080111fb8                cmd_get_data_size
+                0x00000000801123b4                do_mem_loop
+                0x0000000080112b64                do_mem_md
+                0x0000000080111a70                mmu_dump_tlb
+ .text          0x0000000080112eb0      0x130 common/libcommon.a(cmd_misc.o)
+                0x0000000080112eb0                do_sleep
+ .text          0x0000000080112fe0     0x1330 common/libcommon.a(cmd_msc.o)
+                0x0000000080113478                msc_read
+                0x00000000801131b0                msc_write
+                0x0000000080114104                do_msc
+ .text          0x0000000080114310     0x1e50 common/libcommon.a(cmd_nand.o)
+                0x0000000080114310                do_nandboot
+                0x0000000080114924                do_nand
+ .text          0x0000000080116160      0x5f0 common/libcommon.a(cmd_net.o)
+                0x00000000801166ec                do_rarpb
+                0x0000000080116160                do_ping
+                0x000000008011670c                do_tftpb
+                0x00000000801166cc                do_dhcp
+                0x000000008011672c                do_bootp
+                0x00000000801166ac                do_nfs
+ .text          0x0000000080116750     0x1160 common/libcommon.a(cmd_nvedit.o)
+                0x00000000801169bc                getenv
+                0x0000000080116a94                _do_setenv
+                0x0000000080117274                do_askenv
+                0x0000000080116850                getenv_r
+                0x000000008011759c                do_printenv
+                0x0000000080117548                setenv
+                0x0000000080116968                do_saveenv
+                0x00000000801174d4                do_setenv
+ .text          0x00000000801178b0      0x570 common/libcommon.a(command.o)
+                0x00000000801179c8                do_echo
+                0x00000000801178b0                find_cmd
+                0x0000000080117b04                do_help
+                0x0000000080117ddc                do_version
+ .text          0x0000000080117e20      0x8e0 common/libcommon.a(console.o)
+                0x00000000801182fc                console_init_r
+                0x0000000080118290                printf
+                0x0000000080118058                console_assign
+                0x0000000080118634                getc
+                0x00000000801181fc                puts
+                0x0000000080118038                dbg
+                0x0000000080118548                serial_printf
+                0x0000000080117f30                ftstc
+                0x0000000080118188                fprintf
+                0x00000000801185f8                tstc
+                0x0000000080118238                vprintf
+                0x0000000080118670                ctrlc
+                0x00000000801185b4                putc
+                0x0000000080117fec                disable_ctrlc
+                0x0000000080117ef8                fgetc
+                0x0000000080118008                had_ctrlc
+                0x0000000080117f68                fputc
+                0x0000000080118048                console_init_f
+                0x0000000080118020                clear_ctrlc
+                0x0000000080117fac                fputs
+ .text          0x0000000080118700      0x1a0 common/libcommon.a(devices.o)
+                0x000000008011873c                device_register
+                0x0000000080118700                devices_done
+                0x0000000080118780                devices_init
+ .text          0x00000000801188a0     0x1670 common/libcommon.a(dlmalloc.o)
+                0x0000000080118dc0                malloc
+                0x000000008011974c                pvalloc
+                0x000000008011978c                calloc
+                0x00000000801188e4                malloc_usable_size
+                0x00000000801198b8                realloc
+                0x00000000801189cc                malloc_trim
+                0x00000000801188a0                malloc_bin_reloc
+                0x000000008011893c                mallopt
+                0x0000000080119598                memalign
+                0x0000000080118da8                cfree
+                0x0000000080119770                valloc
+                0x0000000080118af4                free
+ .text          0x0000000080119f10      0x200 common/libcommon.a(env_common.o)
+                0x0000000080119f44                env_get_addr
+                0x000000008011a018                env_relocate
+                0x0000000080119fc8                env_crc_update
+                0x0000000080119f10                env_get_char_memory
+ .text          0x000000008011a110      0x1e0 common/libcommon.a(env_msc.o)
+                0x000000008011a148                env_relocate_spec
+                0x000000008011a2bc                saveenv
+                0x000000008011a110                env_get_char_spec
+                0x000000008011a120                env_init
+ .text          0x000000008011a2f0       0xe0 common/libcommon.a(exports.o)
+                0x000000008011a300                jumptable_init
+                0x000000008011a2f8                get_version
+ .text          0x000000008011a3d0      0x430 common/libcommon.a(flash.o)
+                0x000000008011a624                flash_write
+                0x000000008011a3d0                flash_protect
+                0x000000008011a4b4                addr2info
+                0x000000008011a510                flash_perror
+ .text          0x000000008011a800      0x650 common/libcommon.a(lists.o)
+                0x000000008011aca0                DisposeHandle
+                0x000000008011acfc                ListDispose
+                0x000000008011a9dc                ListInsertItems
+                0x000000008011a808                ListSetAllocationPolicy
+                0x000000008011a870                ListGetItemSize
+                0x000000008011a864                ListGetDataPtr
+                0x000000008011ad14                NewHandle
+                0x000000008011a8fc                SetHandleSize
+                0x000000008011ac88                ListInsertItem
+                0x000000008011a800                GetHandleSize
+                0x000000008011a87c                ListNumItems
+                0x000000008011a818                ListGetPtrToItem
+                0x000000008011add4                ListCreate
+                0x000000008011a888                ListGetItems
+ .text          0x000000008011ae50      0x3e0 common/libcommon.a(s_record.o)
+                0x000000008011af34                srec_decode
+ .text          0x000000008011b230      0xef0 common/libcommon.a(xyzModem.o)
+                0x000000008011b3a8                xyzModem_error
+                0x000000008011b44c                xyzModem_stream_close
+                0x000000008011b4e0                CYGACC_COMM_IF_GETC_TIMEOUT
+                0x000000008011b230                parse_num
+                0x000000008011b5e0                xyzModem_stream_terminate
+                0x000000008011beb0                xyzModem_stream_open
+                0x000000008011b4c4                CYGACC_COMM_IF_PUTC
+                0x000000008011baec                xyzModem_stream_read
+ .text          0x000000008011c120       0x70 common/libcommon.a(crc16.o)
+                0x000000008011c120                cyg_crc16
+ .text          0x000000008011c190      0x2f0 lib_generic/libgeneric.a(crc32.o)
+                0x000000008011c190                crc32
+                0x000000008011c308                crc32_no_comp
+ .text          0x000000008011c480      0x140 lib_generic/libgeneric.a(display_options.o)
+                0x000000008011c574                display_options
+                0x000000008011c480                print_size
+ .text          0x000000008011c5c0      0x6d0 lib_generic/libgeneric.a(string.o)
+                0x000000008011ca44                memmove
+                0x000000008011ca18                memcpy
+                0x000000008011c998                strswab
+                0x000000008011c740                strnlen
+                0x000000008011c6c0                strrchr
+                0x000000008011c5c0                strcat
+                0x000000008011cbcc                memchr
+                0x000000008011cb04                strstr
+                0x000000008011c84c                strtok
+                0x000000008011caa4                memcmp
+                0x000000008011c5fc                strncat
+                0x000000008011cbfc                strdup
+                0x000000008011c9e8                memset
+                0x000000008011c930                strsep
+                0x000000008011c784                strspn
+                0x000000008011c690                strlen
+                0x000000008011c650                strchr
+                0x000000008011c7ec                strpbrk
+ .text          0x000000008011cc90      0xa00 lib_generic/libgeneric.a(vsprintf.o)
+                0x000000008011d148                vsprintf
+                0x000000008011cd9c                simple_strtol
+                0x000000008011d0c0                panic
+                0x000000008011d64c                sprintf
+                0x000000008011cc90                simple_strtoul
+ .text          0x000000008011d690     0x3420 lib_generic/libgeneric.a(zlib.o)
+                0x000000008011e93c                inflate
+                0x000000008011e264                inflateInit2
+                0x000000008011e7a4                inflateIncomp
+                0x000000008011e41c                adler32
+                0x000000008011e0a4                inflateReset
+                0x000000008011e124                inflateSync
+                0x000000008011e404                inflateInit
+                0x000000008011dfd8                inflateEnd
+ .text          0x0000000080120ab0        0x0 lib_generic/libgeneric.a(ctype.o)
+ .text          0x0000000080120ab0      0x2b0 board/pisces/libpisces.a(pisces.o)
+                0x0000000080120ab0                board_early_init
+                0x0000000080120ae0                checkboard
+ .text          0x0000000080120d60      0x740 board/pisces/libpisces.a(flash.o)
+                0x00000000801210ec                flash_erase
+                0x0000000080121360                flash_init
+                0x0000000080120ec8                flash_print_info
+                0x0000000080120d60                write_buff
+ .text          0x00000000801214a0      0x2c0 cpu/mips/libmips.a(jz_serial.o)
+                0x00000000801214a0                serial_setbrg
+                0x00000000801216d0                serial_put_hex
+                0x0000000080121674                serial_tstc
+                0x00000000801215a8                serial_putc
+                0x0000000080121530                serial_init
+                0x0000000080121620                serial_puts
+                0x0000000080121688                serial_getc
+ .text          0x0000000080121760      0x1d0 cpu/mips/libmips.a(cpu.o)
+                0x00000000801218a0                flush_cache_all
+                0x0000000080121760                flush_cache
+                0x0000000080121840                flush_icache_all
+                0x00000000801218d8                do_reset
+                0x000000008012187c                flush_dcache_all
+                0x0000000080121808                write_one_tlb
+ .text          0x0000000080121930       0x10 cpu/mips/libmips.a(interrupts.o)
+                0x0000000080121938                disable_interrupts
+                0x0000000080121930                enable_interrupts
+ .text          0x0000000080121940      0x760 cpu/mips/libmips.a(jz4770.o)
+                0x0000000080121b40                set_timer
+                0x0000000080121b88                reset_timer
+                0x0000000080121a8c                pll_1_init
+                0x0000000080121ea4                get_tbclk
+                0x0000000080121c0c                get_timer
+                0x0000000080121b58                reset_timer_masked
+                0x0000000080121ac8                timer_init
+                0x0000000080121ba0                get_timer_masked
+                0x0000000080121940                jzmemset
+                0x0000000080121c4c                udelay
+                0x0000000080121eac                jz_board_init
+                0x0000000080121d78                udelay_masked
+                0x0000000080121e6c                get_ticks
+                0x00000000801219a4                pll_init
+ .text          0x00000000801220a0      0x870 cpu/mips/libmips.a(jz4770_nand.o)
+                0x0000000080122170                board_nand_select_device
+                0x0000000080122320                board_nand_init
+ .text          0x0000000080122910      0xd50 cpu/mips/libmips.a(jz4770_eth.o)
+                0x0000000080122940                jz_enet_initialize
+ .text          0x0000000080123660      0xb60 cpu/mips/libmips.a(jz4770_ddr.o)
+                0x00000000801239d0                sdram_init
+                0x00000000801236c4                initdram
+ .text          0x00000000801241c0      0x1a0 cpu/mips/libmips.a(jz_mddr_init.o)
+                0x00000000801241c0                ddr_mem_init
+ .text          0x0000000080124360      0x800 lib_mips/libmips.a(mips_linux.o)
+                0x0000000080124484                do_bootm_linux
+ .text          0x0000000080124b60     0x1410 drivers/nand/libnand.a(nand_util.o)
+                0x0000000080124b68                nand_lock
+                0x0000000080124c08                nand_unlock
+                0x0000000080124d9c                nand_get_lock_status
+                0x0000000080125abc                nand_erase_opts
+                0x0000000080124e78                nand_read_opts
+                0x000000008012538c                nand_write_opts
+ .text          0x0000000080125f70      0x650 /opt/mipseltools-gcc412-glibc261/lib/gcc/mipsel-linux/4.1.2/libgcc.a(_udivdi3.o)
+                0x0000000080125f70                __udivdi3
+ .text          0x00000000801265c0        0x0 /opt/mipseltools-gcc412-glibc261/lib/gcc/mipsel-linux/4.1.2/libgcc.a(_clz.o)
+                0x00000000801265c0                . = ALIGN (0x4)
+
+.rodata         0x00000000801265c0     0x2080
+ *(.rodata)
+ .rodata        0x00000000801265c0       0x40 lib_mips/libmips.a(board.o)
+                0x00000000801265c0                version_string
+ .rodata        0x0000000080126600       0x30 net/libnet.a(net.o)
+ .rodata        0x0000000080126630       0x20 net/libnet.a(tftp.o)
+ .rodata        0x0000000080126650      0x110 net/libnet.a(bootp.o)
+ .rodata        0x0000000080126760       0x10 net/libnet.a(eth.o)
+ .rodata        0x0000000080126770       0x40 net/libnet.a(nfs.o)
+ .rodata        0x00000000801267b0       0x10 drivers/nand/libnand.a(nand.o)
+ .rodata        0x00000000801267c0       0xb0 drivers/nand/libnand.a(nand_base_jz4770.o)
+ .rodata        0x0000000080126870      0x100 drivers/nand/libnand.a(nand_ecc.o)
+ .rodata        0x0000000080126970       0xc0 common/libcommon.a(cmd_bootm.o)
+ .rodata        0x0000000080126a30       0x30 common/libcommon.a(cmd_itest.o)
+ .rodata        0x0000000080126a60       0x10 common/libcommon.a(cmd_msc.o)
+ .rodata        0x0000000080126a70     0x1090 common/libcommon.a(cmd_nand.o)
+ .rodata        0x0000000080127b00       0x20 common/libcommon.a(cmd_nvedit.o)
+ .rodata        0x0000000080127b20       0x30 common/libcommon.a(s_record.o)
+ .rodata        0x0000000080127b50       0x20 common/libcommon.a(xyzModem.o)
+ .rodata        0x0000000080127b70      0x200 common/libcommon.a(crc16.o)
+ .rodata        0x0000000080127d70      0x400 lib_generic/libgeneric.a(crc32.o)
+ .rodata        0x0000000080128170      0x1a0 lib_generic/libgeneric.a(vsprintf.o)
+ .rodata        0x0000000080128310      0x110 lib_generic/libgeneric.a(zlib.o)
+ .rodata        0x0000000080128420       0x70 cpu/mips/libmips.a(jz4770.o)
+ .rodata        0x0000000080128490       0x80 cpu/mips/libmips.a(jz4770_nand.o)
+ .rodata        0x0000000080128510       0x30 cpu/mips/libmips.a(jz4770_ddr.o)
+ .rodata        0x0000000080128540      0x100 /opt/mipseltools-gcc412-glibc261/lib/gcc/mipsel-linux/4.1.2/libgcc.a(_clz.o)
+                0x0000000080128540                __clz_tab
+
+.reginfo        0x0000000080128640       0x18
+ .reginfo       0x0000000080128640       0x18 cpu/mips/start.o
+
+.rodata.str1.4  0x0000000080128658     0x5690
+ .rodata.str1.4
+                0x0000000080128658       0xec lib_mips/libmips.a(board.o)
+                                         0xf0 (size before relaxing)
+ .rodata.str1.4
+                0x0000000080128744      0x244 net/libnet.a(net.o)
+ .rodata.str1.4
+                0x0000000080128988      0x1c5 net/libnet.a(tftp.o)
+                                        0x1e8 (size before relaxing)
+ *fill*         0x0000000080128b4d        0x3 00
+ .rodata.str1.4
+                0x0000000080128b50      0x115 net/libnet.a(bootp.o)
+                                        0x14c (size before relaxing)
+ *fill*         0x0000000080128c65        0x3 00
+ .rodata.str1.4
+                0x0000000080128c68       0x13 net/libnet.a(rarp.o)
+                                         0x4c (size before relaxing)
+ *fill*         0x0000000080128c7b        0x1 00
+ .rodata.str1.4
+                0x0000000080128c7c       0xee net/libnet.a(eth.o)
+                                         0xfc (size before relaxing)
+ *fill*         0x0000000080128d6a        0x2 00
+ .rodata.str1.4
+                0x0000000080128d6c      0x101 net/libnet.a(nfs.o)
+                                        0x1a0 (size before relaxing)
+ *fill*         0x0000000080128e6d        0x3 00
+ .rodata.str1.4
+                0x0000000080128e70        0x9 drivers/nand/libnand.a(nand.o)
+                                          0xc (size before relaxing)
+ *fill*         0x0000000080128e79        0x3 00
+ .rodata.str1.4
+                0x0000000080128e7c      0x3a6 drivers/nand/libnand.a(nand_base_jz4770.o)
+                                        0x3ac (size before relaxing)
+ *fill*         0x0000000080129222        0x2 00
+ .rodata.str1.4
+                0x0000000080129224      0x14c drivers/nand/libnand.a(nand_ids.o)
+ .rodata.str1.4
+                0x0000000080129370      0x308 drivers/nand/libnand.a(nand_bbt.o)
+ .rodata.str1.4
+                0x0000000080129678       0xfd common/libcommon.a(main.o)
+                                        0x100 (size before relaxing)
+ *fill*         0x0000000080129775        0x3 00
+ .rodata.str1.4
+                0x0000000080129778       0xf7 common/libcommon.a(cmd_autoscript.o)
+                                         0xf8 (size before relaxing)
+ *fill*         0x000000008012986f        0x1 00
+ .rodata.str1.4
+                0x0000000080129870       0xc2 common/libcommon.a(cmd_bdinfo.o)
+                                         0xc4 (size before relaxing)
+ *fill*         0x0000000080129932        0x2 00
+ .rodata.str1.4
+                0x0000000080129934      0x10c common/libcommon.a(cmd_boot.o)
+                                        0x118 (size before relaxing)
+ .rodata.str1.4
+                0x0000000080129a40      0x88f common/libcommon.a(cmd_bootm.o)
+                                        0x8c4 (size before relaxing)
+ *fill*         0x000000008012a2cf        0x1 00
+ .rodata.str1.4
+                0x000000008012a2d0       0x6d common/libcommon.a(cmd_console.o)
+                                         0x74 (size before relaxing)
+ *fill*         0x000000008012a33d        0x3 00
+ .rodata.str1.4
+                0x000000008012a340      0x76b common/libcommon.a(cmd_flash.o)
+                                        0x780 (size before relaxing)
+ *fill*         0x000000008012aaab        0x1 00
+ .rodata.str1.4
+                0x000000008012aaac       0xcf common/libcommon.a(cmd_itest.o)
+                                         0xdc (size before relaxing)
+ *fill*         0x000000008012ab7b        0x1 00
+ .rodata.str1.4
+                0x000000008012ab7c      0x393 common/libcommon.a(cmd_load.o)
+                                        0x3b4 (size before relaxing)
+ *fill*         0x000000008012af0f        0x1 00
+ .rodata.str1.4
+                0x000000008012af10      0x6aa common/libcommon.a(cmd_mem.o)
+                                        0x6c8 (size before relaxing)
+ *fill*         0x000000008012b5ba        0x2 00
+ .rodata.str1.4
+                0x000000008012b5bc       0x70 common/libcommon.a(cmd_misc.o)
+                                         0x7c (size before relaxing)
+ .rodata.str1.4
+                0x000000008012b62c      0x12c common/libcommon.a(cmd_msc.o)
+                                        0x138 (size before relaxing)
+ .rodata.str1.4
+                0x000000008012b758      0xa91 common/libcommon.a(cmd_nand.o)
+                                        0xaf8 (size before relaxing)
+ *fill*         0x000000008012c1e9        0x3 00
+ .rodata.str1.4
+                0x000000008012c1ec      0x265 common/libcommon.a(cmd_net.o)
+                                        0x2bc (size before relaxing)
+ *fill*         0x000000008012c451        0x3 00
+ .rodata.str1.4
+                0x000000008012c454      0x4d7 common/libcommon.a(cmd_nvedit.o)
+                                        0x570 (size before relaxing)
+ *fill*         0x000000008012c92b        0x1 00
+ .rodata.str1.4
+                0x000000008012c92c      0x280 common/libcommon.a(command.o)
+ .rodata.str1.4
+                0x000000008012cbac       0x75 common/libcommon.a(console.o)
+                                         0x7c (size before relaxing)
+ *fill*         0x000000008012cc21        0x3 00
+ .rodata.str1.4
+                0x000000008012cc24       0x2f common/libcommon.a(devices.o)
+                                         0x48 (size before relaxing)
+ *fill*         0x000000008012cc53        0x1 00
+ .rodata.str1.4
+                0x000000008012cc54       0x33 common/libcommon.a(env_common.o)
+                                         0x34 (size before relaxing)
+ *fill*         0x000000008012cc87        0x1 00
+ .rodata.str1.4
+                0x000000008012cc88       0x74 common/libcommon.a(env_msc.o)
+ .rodata.str1.4
+                0x000000008012ccfc      0x120 common/libcommon.a(flash.o)
+ .rodata.str1.4
+                0x000000008012ce1c       0xf1 common/libcommon.a(xyzModem.o)
+                                         0xf8 (size before relaxing)
+ *fill*         0x000000008012cf0d        0x3 00
+ .rodata.str1.4
+                0x000000008012cf10       0x17 lib_generic/libgeneric.a(display_options.o)
+                                         0x20 (size before relaxing)
+ *fill*         0x000000008012cf27        0x1 00
+ .rodata.str1.4
+                0x000000008012cf28       0x57 lib_generic/libgeneric.a(vsprintf.o)
+                                         0x58 (size before relaxing)
+ *fill*         0x000000008012cf7f        0x1 00
+ .rodata.str1.4
+                0x000000008012cf80      0x20f lib_generic/libgeneric.a(zlib.o)
+                                        0x214 (size before relaxing)
+ *fill*         0x000000008012d18f        0x1 00
+ .rodata.str1.4
+                0x000000008012d190      0x1db board/pisces/libpisces.a(pisces.o)
+                                        0x1dc (size before relaxing)
+ *fill*         0x000000008012d36b        0x1 00
+ .rodata.str1.4
+                0x000000008012d36c      0x148 board/pisces/libpisces.a(flash.o)
+                                        0x14c (size before relaxing)
+ .rodata.str1.4
+                0x000000008012d4b4       0x16 cpu/mips/libmips.a(cpu.o)
+                                         0x18 (size before relaxing)
+ *fill*         0x000000008012d4ca        0x2 00
+ .rodata.str1.4
+                0x000000008012d4cc       0x21 cpu/mips/libmips.a(jz4770_nand.o)
+                                         0x24 (size before relaxing)
+ *fill*         0x000000008012d4ed        0x3 00
+ .rodata.str1.4
+                0x000000008012d4f0      0x1f2 cpu/mips/libmips.a(jz4770_eth.o)
+                                        0x1f4 (size before relaxing)
+ *fill*         0x000000008012d6e2        0x2 00
+ .rodata.str1.4
+                0x000000008012d6e4       0x35 cpu/mips/libmips.a(jz4770_ddr.o)
+                                         0x38 (size before relaxing)
+ *fill*         0x000000008012d719        0x3 00
+ .rodata.str1.4
+                0x000000008012d71c       0xa7 lib_mips/libmips.a(mips_linux.o)
+                                        0x11c (size before relaxing)
+ *fill*         0x000000008012d7c3        0x1 00
+ .rodata.str1.4
+                0x000000008012d7c4      0x524 drivers/nand/libnand.a(nand_util.o)
+                                        0x55c (size before relaxing)
+
+.rodata.cst4    0x000000008012dce8        0x8
+ .rodata.cst4   0x000000008012dce8        0x4 cpu/mips/libmips.a(jz4770_eth.o)
+ .rodata.cst4   0x000000008012dcec        0x4 cpu/mips/libmips.a(jz4770_ddr.o)
+                0x000000008012dcf0                . = ALIGN (0x4)
+
+.data           0x000000008012dcf0     0x4f60
+ *(.data)
+ .data          0x000000008012dcf0        0x0 cpu/mips/start.o
+ .data          0x000000008012dcf0        0x0 lib_mips/libmips.a(board.o)
+ .data          0x000000008012dcf0       0x10 net/libnet.a(net.o)
+                0x000000008012dcf0                NetBcastAddr
+                0x000000008012dcf8                NetOurNativeVLAN
+                0x000000008012dcf6                NetOurVLAN
+ .data          0x000000008012dd00        0x0 net/libnet.a(tftp.o)
+ .data          0x000000008012dd00        0x0 net/libnet.a(bootp.o)
+ .data          0x000000008012dd00        0x0 net/libnet.a(rarp.o)
+ .data          0x000000008012dd00        0x0 net/libnet.a(eth.o)
+ .data          0x000000008012dd00       0x10 net/libnet.a(nfs.o)
+ .data          0x000000008012dd10       0x10 drivers/nand/libnand.a(nand.o)
+                0x000000008012dd10                nand_curr_device
+ .data          0x000000008012dd20     0x31f0 drivers/nand/libnand.a(nand_base_jz4770.o)
+ .data          0x0000000080130f10        0x0 drivers/nand/libnand.a(nand_ids.o)
+ .data          0x0000000080130f10        0x0 drivers/nand/libnand.a(nand_ecc.o)
+ .data          0x0000000080130f10       0x20 drivers/nand/libnand.a(nand_bbt.o)
+ .data          0x0000000080130f30       0x10 common/libcommon.a(main.o)
+ .data          0x0000000080130f40        0x0 common/libcommon.a(cmd_autoscript.o)
+ .data          0x0000000080130f40        0x0 common/libcommon.a(cmd_bdinfo.o)
+ .data          0x0000000080130f40        0x0 common/libcommon.a(cmd_boot.o)
+ .data          0x0000000080130f40       0x10 common/libcommon.a(cmd_bootm.o)
+                0x0000000080130f40                load_addr
+ .data          0x0000000080130f50        0x0 common/libcommon.a(cmd_console.o)
+ .data          0x0000000080130f50        0x0 common/libcommon.a(cmd_flash.o)
+ .data          0x0000000080130f50        0x0 common/libcommon.a(cmd_itest.o)
+ .data          0x0000000080130f50       0x10 common/libcommon.a(cmd_load.o)
+ .data          0x0000000080130f60       0x10 common/libcommon.a(cmd_mem.o)
+                0x0000000080130f60                dp_last_length
+ .data          0x0000000080130f70        0x0 common/libcommon.a(cmd_misc.o)
+ .data          0x0000000080130f70        0x0 common/libcommon.a(cmd_msc.o)
+ .data          0x0000000080130f70        0x0 common/libcommon.a(cmd_nand.o)
+ .data          0x0000000080130f70        0x0 common/libcommon.a(cmd_net.o)
+ .data          0x0000000080130f70        0x0 common/libcommon.a(cmd_nvedit.o)
+ .data          0x0000000080130f70        0x0 common/libcommon.a(command.o)
+ .data          0x0000000080130f70        0x0 common/libcommon.a(console.o)
+ .data          0x0000000080130f70        0x0 common/libcommon.a(devices.o)
+ .data          0x0000000080130f70       0x10 common/libcommon.a(dlmalloc.o)
+ .data          0x0000000080130f80      0x100 common/libcommon.a(env_common.o)
+                0x0000000080130f80                default_environment
+                0x0000000080131070                default_environment_size
+ .data          0x0000000080131080        0x0 common/libcommon.a(env_msc.o)
+ .data          0x0000000080131080        0x0 common/libcommon.a(exports.o)
+ .data          0x0000000080131080        0x0 common/libcommon.a(flash.o)
+ .data          0x0000000080131080        0x0 common/libcommon.a(lists.o)
+ .data          0x0000000080131080        0x0 common/libcommon.a(s_record.o)
+ .data          0x0000000080131080        0x0 common/libcommon.a(xyzModem.o)
+ .data          0x0000000080131080        0x0 common/libcommon.a(crc16.o)
+ .data          0x0000000080131080        0x0 lib_generic/libgeneric.a(crc32.o)
+ .data          0x0000000080131080        0x0 lib_generic/libgeneric.a(display_options.o)
+ .data          0x0000000080131080        0x0 lib_generic/libgeneric.a(string.o)
+ .data          0x0000000080131080        0x0 lib_generic/libgeneric.a(vsprintf.o)
+ .data          0x0000000080131080      0x1f0 lib_generic/libgeneric.a(zlib.o)
+ .data          0x0000000080131270      0x100 lib_generic/libgeneric.a(ctype.o)
+                0x0000000080131270                _ctype
+ .data          0x0000000080131370        0x0 board/pisces/libpisces.a(pisces.o)
+ .data          0x0000000080131370        0x0 board/pisces/libpisces.a(flash.o)
+ .data          0x0000000080131370        0x0 cpu/mips/libmips.a(jz_serial.o)
+ .data          0x0000000080131370        0x0 cpu/mips/libmips.a(cpu.o)
+ .data          0x0000000080131370        0x0 cpu/mips/libmips.a(interrupts.o)
+ .data          0x0000000080131370        0x0 cpu/mips/libmips.a(jz4770.o)
+ .data          0x0000000080131370        0x0 cpu/mips/libmips.a(jz4770_nand.o)
+ .data          0x0000000080131370        0x0 cpu/mips/libmips.a(jz4770_eth.o)
+ .data          0x0000000080131370        0x0 cpu/mips/libmips.a(jz4770_ddr.o)
+ .data          0x0000000080131370        0x0 cpu/mips/libmips.a(jz_mddr_init.o)
+ .data          0x0000000080131370        0x0 lib_mips/libmips.a(mips_linux.o)
+ .data          0x0000000080131370     0x18e0 drivers/nand/libnand.a(nand_util.o)
+ .data          0x0000000080132c50        0x0 /opt/mipseltools-gcc412-glibc261/lib/gcc/mipsel-linux/4.1.2/libgcc.a(_udivdi3.o)
+ .data          0x0000000080132c50        0x0 /opt/mipseltools-gcc412-glibc261/lib/gcc/mipsel-linux/4.1.2/libgcc.a(_clz.o)
+
+.data.rel       0x0000000080132c50       0x28
+ .data.rel      0x0000000080132c50       0x28 lib_mips/libmips.a(board.o)
+                0x0000000080132c50                init_sequence
+
+.data.rel.ro.local
+                0x0000000080132c78        0x4
+ .data.rel.ro.local
+                0x0000000080132c78        0x4 lib_mips/libmips.a(board.o)
+
+.data.rel.local
+                0x0000000080132c7c      0xa14
+ .data.rel.local
+                0x0000000080132c7c      0x470 drivers/nand/libnand.a(nand_ids.o)
+                0x000000008013309c                nand_manuf_ids
+                0x0000000080132c7c                nand_flash_ids
+ .data.rel.local
+                0x00000000801330ec       0xfc drivers/nand/libnand.a(nand_bbt.o)
+ .data.rel.local
+                0x00000000801331e8       0x68 common/libcommon.a(cmd_itest.o)
+                0x00000000801331e8                op_table
+ .data.rel.local
+                0x0000000080133250        0xc common/libcommon.a(devices.o)
+                0x0000000080133250                stdio_names
+ .data.rel.local
+                0x000000008013325c      0x408 common/libcommon.a(dlmalloc.o)
+ .data.rel.local
+                0x0000000080133664        0x4 common/libcommon.a(env_common.o)
+                0x0000000080133664                env_get_char
+ .data.rel.local
+                0x0000000080133668        0x4 common/libcommon.a(env_msc.o)
+                0x0000000080133668                env_name_spec
+ .data.rel.local
+                0x000000008013366c       0x24 lib_generic/libgeneric.a(zlib.o)
+                0x000000008013366c                zlib_version
+                0x0000000080133670                z_errmsg
+
+.data.rel.ro    0x0000000080133690       0x18
+ .data.rel.ro   0x0000000080133690        0x4 drivers/nand/libnand.a(nand_bbt.o)
+ .data.rel.ro   0x0000000080133694        0x4 common/libcommon.a(main.o)
+ .data.rel.ro   0x0000000080133698        0x8 common/libcommon.a(xyzModem.o)
+ .data.rel.ro   0x00000000801336a0        0x4 lib_generic/libgeneric.a(zlib.o)
+ .data.rel.ro   0x00000000801336a4        0x4 cpu/mips/libmips.a(jz4770_ddr.o)
+
+.eh_frame       0x00000000801336a8       0x20
+ .eh_frame      0x00000000801336a8       0x20 /opt/mipseltools-gcc412-glibc261/lib/gcc/mipsel-linux/4.1.2/libgcc.a(_udivdi3.o)
+                0x00000000801336c8                . = ALIGN (0x4)
+
+.sdata
+ *(.sdata)
+ *(.sdata)
+                0x00000000801336d0                . = ALIGN (0x10)
+                0x00000000801336d0                _gp = .
+                0x00000000801336d0                __got_start = .
+
+.got            0x00000000801336d0      0x554
+ *(.got)
+ .got           0x00000000801336d0      0x554 cpu/mips/start.o
+                0x00000000801336d0                _GLOBAL_OFFSET_TABLE_
+                0x0000000080133c24                __got_end = .
+                0x0000000080133c30                . = ALIGN (0x10)
+                0x0000000080133c30                __u_boot_cmd_start = .
+
+.u_boot_cmd     0x0000000080133c30      0x450
+ *(.u_boot_cmd)
+ .u_boot_cmd    0x0000000080133c30       0x18 common/libcommon.a(cmd_autoscript.o)
+                0x0000000080133c30                __u_boot_cmd_autoscr
+ .u_boot_cmd    0x0000000080133c48       0x18 common/libcommon.a(cmd_bdinfo.o)
+                0x0000000080133c48                __u_boot_cmd_bdinfo
+ .u_boot_cmd    0x0000000080133c60       0x30 common/libcommon.a(cmd_boot.o)
+                0x0000000080133c78                __u_boot_cmd_reset
+                0x0000000080133c60                __u_boot_cmd_go
+ .u_boot_cmd    0x0000000080133c90       0x78 common/libcommon.a(cmd_bootm.o)
+                0x0000000080133c90                __u_boot_cmd_bootm
+                0x0000000080133cd8                __u_boot_cmd_iminfo
+                0x0000000080133cc0                __u_boot_cmd_bootd
+                0x0000000080133ca8                __u_boot_cmd_boot
+                0x0000000080133cf0                __u_boot_cmd_imls
+ .u_boot_cmd    0x0000000080133d08       0x18 common/libcommon.a(cmd_console.o)
+                0x0000000080133d08                __u_boot_cmd_coninfo
+ .u_boot_cmd    0x0000000080133d20       0x48 common/libcommon.a(cmd_flash.o)
+                0x0000000080133d20                __u_boot_cmd_flinfo
+                0x0000000080133d38                __u_boot_cmd_erase
+                0x0000000080133d50                __u_boot_cmd_protect
+ .u_boot_cmd    0x0000000080133d68       0x18 common/libcommon.a(cmd_itest.o)
+                0x0000000080133d68                __u_boot_cmd_itest
+ .u_boot_cmd    0x0000000080133d80       0x48 common/libcommon.a(cmd_load.o)
+                0x0000000080133db0                __u_boot_cmd_loady
+                0x0000000080133d98                __u_boot_cmd_loadb
+                0x0000000080133d80                __u_boot_cmd_loads
+ .u_boot_cmd    0x0000000080133dc8       0xf0 common/libcommon.a(cmd_mem.o)
+                0x0000000080133dc8                __u_boot_cmd_md
+                0x0000000080133e40                __u_boot_cmd_cmp
+                0x0000000080133e10                __u_boot_cmd_mw
+                0x0000000080133e88                __u_boot_cmd_loop
+                0x0000000080133e70                __u_boot_cmd_base
+                0x0000000080133de0                __u_boot_cmd_mm
+                0x0000000080133e58                __u_boot_cmd_crc32
+                0x0000000080133df8                __u_boot_cmd_nm
+                0x0000000080133ea0                __u_boot_cmd_mtest
+                0x0000000080133e28                __u_boot_cmd_cp
+ .u_boot_cmd    0x0000000080133eb8       0x18 common/libcommon.a(cmd_misc.o)
+                0x0000000080133eb8                __u_boot_cmd_sleep
+ .u_boot_cmd    0x0000000080133ed0       0x18 common/libcommon.a(cmd_msc.o)
+                0x0000000080133ed0                __u_boot_cmd_msc
+ .u_boot_cmd    0x0000000080133ee8       0x30 common/libcommon.a(cmd_nand.o)
+                0x0000000080133ee8                __u_boot_cmd_nand
+                0x0000000080133f00                __u_boot_cmd_nboot
+ .u_boot_cmd    0x0000000080133f18       0x90 common/libcommon.a(cmd_net.o)
+                0x0000000080133f78                __u_boot_cmd_nfs
+                0x0000000080133f90                __u_boot_cmd_ping
+                0x0000000080133f48                __u_boot_cmd_rarpboot
+                0x0000000080133f30                __u_boot_cmd_tftpboot
+                0x0000000080133f18                __u_boot_cmd_bootp
+                0x0000000080133f60                __u_boot_cmd_dhcp
+ .u_boot_cmd    0x0000000080133fa8       0x78 common/libcommon.a(cmd_nvedit.o)
+                0x0000000080134008                __u_boot_cmd_run
+                0x0000000080133fd8                __u_boot_cmd_saveenv
+                0x0000000080133ff0                __u_boot_cmd_askenv
+                0x0000000080133fa8                __u_boot_cmd_printenv
+                0x0000000080133fc0                __u_boot_cmd_setenv
+ .u_boot_cmd    0x0000000080134020       0x60 common/libcommon.a(command.o)
+                0x0000000080134038                __u_boot_cmd_echo
+                0x0000000080134068                __u_boot_cmd_question_mark
+                0x0000000080134020                __u_boot_cmd_version
+                0x0000000080134050                __u_boot_cmd_help
+                0x0000000080134080                __u_boot_cmd_end = .
+                0x0000000080134080                uboot_end_data = .
+                0x0000000000000155                num_got_entries = ((__got_end - __got_start) >> 0x2)
+                0x0000000080134080                . = ALIGN (0x4)
+
+.sbss
+ *(.sbss)
+
+.bss            0x0000000080134080     0xad80
+ *(.bss)
+ .bss           0x0000000080134080        0x0 cpu/mips/start.o
+ .bss           0x0000000080134080       0x10 lib_mips/libmips.a(board.o)
+ .bss           0x0000000080134090       0xd0 net/libnet.a(net.o)
+                0x000000008013409c                NetOurNISDomain
+                0x0000000080134120                NetServerEther
+                0x0000000080134090                NetOurSubnetMask
+                0x000000008013411c                NetBootFileSize
+                0x00000000801340bc                NetOurHostName
+                0x0000000080134094                NetOurGatewayIP
+                0x0000000080134128                NetEtherNullAddr
+                0x0000000080134130                NetRestartWrap
+                0x0000000080134134                NetTxPacket
+                0x0000000080134098                NetOurDNSIP
+                0x00000000801340dc                NetOurRootPath
+ .bss           0x0000000080134160       0x40 net/libnet.a(tftp.o)
+ .bss           0x00000000801341a0       0x10 net/libnet.a(bootp.o)
+                0x00000000801341a8                NetDHCPServerIP
+                0x00000000801341a0                dhcp_state
+                0x00000000801341a4                dhcp_leasetime
+ .bss           0x00000000801341b0        0x0 net/libnet.a(rarp.o)
+ .bss           0x00000000801341b0       0x10 net/libnet.a(eth.o)
+ .bss           0x00000000801341c0      0x8b0 net/libnet.a(nfs.o)
+ .bss           0x0000000080134a70       0xc0 drivers/nand/libnand.a(nand.o)
+ .bss           0x0000000080134b30        0x0 drivers/nand/libnand.a(nand_base_jz4770.o)
+ .bss           0x0000000080134b30        0x0 drivers/nand/libnand.a(nand_ids.o)
+ .bss           0x0000000080134b30        0x0 drivers/nand/libnand.a(nand_ecc.o)
+ .bss           0x0000000080134b30        0x0 drivers/nand/libnand.a(nand_bbt.o)
+ .bss           0x0000000080134b30      0x100 common/libcommon.a(main.o)
+ .bss           0x0000000080134c30        0x0 common/libcommon.a(cmd_autoscript.o)
+ .bss           0x0000000080134c30        0x0 common/libcommon.a(cmd_bdinfo.o)
+ .bss           0x0000000080134c30        0x0 common/libcommon.a(cmd_boot.o)
+ .bss           0x0000000080134c30        0x0 common/libcommon.a(cmd_bootm.o)
+ .bss           0x0000000080134c30        0x0 common/libcommon.a(cmd_console.o)
+ .bss           0x0000000080134c30        0x0 common/libcommon.a(cmd_flash.o)
+ .bss           0x0000000080134c30        0x0 common/libcommon.a(cmd_itest.o)
+ .bss           0x0000000080134c30       0x40 common/libcommon.a(cmd_load.o)
+ .bss           0x0000000080134c70       0x10 common/libcommon.a(cmd_mem.o)
+ .bss           0x0000000080134c80        0x0 common/libcommon.a(cmd_misc.o)
+ .bss           0x0000000080134c80       0x20 common/libcommon.a(cmd_msc.o)
+ .bss           0x0000000080134ca0        0x0 common/libcommon.a(cmd_nand.o)
+ .bss           0x0000000080134ca0        0x0 common/libcommon.a(cmd_net.o)
+ .bss           0x0000000080134ca0        0x0 common/libcommon.a(cmd_nvedit.o)
+ .bss           0x0000000080134ca0        0x0 common/libcommon.a(command.o)
+ .bss           0x0000000080134ca0       0x10 common/libcommon.a(console.o)
+ .bss           0x0000000080134cb0       0x10 common/libcommon.a(devices.o)
+                0x0000000080134cb0                devlist
+                0x0000000080134cb4                stdio_devices
+ .bss           0x0000000080134cc0       0x40 common/libcommon.a(dlmalloc.o)
+ .bss           0x0000000080134d00        0x0 common/libcommon.a(env_common.o)
+ .bss           0x0000000080134d00       0x10 common/libcommon.a(env_msc.o)
+                0x0000000080134d00                env_ptr
+ .bss           0x0000000080134d10        0x0 common/libcommon.a(exports.o)
+ .bss           0x0000000080134d10        0x0 common/libcommon.a(flash.o)
+ .bss           0x0000000080134d10        0x0 common/libcommon.a(lists.o)
+ .bss           0x0000000080134d10        0x0 common/libcommon.a(s_record.o)
+ .bss           0x0000000080134d10      0x440 common/libcommon.a(xyzModem.o)
+ .bss           0x0000000080135150        0x0 common/libcommon.a(crc16.o)
+ .bss           0x0000000080135150        0x0 lib_generic/libgeneric.a(crc32.o)
+ .bss           0x0000000080135150        0x0 lib_generic/libgeneric.a(display_options.o)
+ .bss           0x0000000080135150        0x0 lib_generic/libgeneric.a(string.o)
+ .bss           0x0000000080135150        0x0 lib_generic/libgeneric.a(vsprintf.o)
+ .bss           0x0000000080135150     0x10b0 lib_generic/libgeneric.a(zlib.o)
+ .bss           0x0000000080136200        0x0 lib_generic/libgeneric.a(ctype.o)
+ .bss           0x0000000080136200        0x0 board/pisces/libpisces.a(pisces.o)
+ .bss           0x0000000080136200        0x0 board/pisces/libpisces.a(flash.o)
+ .bss           0x0000000080136200       0x10 cpu/mips/libmips.a(jz_serial.o)
+ .bss           0x0000000080136210        0x0 cpu/mips/libmips.a(cpu.o)
+ .bss           0x0000000080136210        0x0 cpu/mips/libmips.a(interrupts.o)
+ .bss           0x0000000080136210       0x10 cpu/mips/libmips.a(jz4770.o)
+ .bss           0x0000000080136220       0x10 cpu/mips/libmips.a(jz4770_nand.o)
+ .bss           0x0000000080136230      0x150 cpu/mips/libmips.a(jz4770_eth.o)
+ .bss           0x0000000080136380        0x0 cpu/mips/libmips.a(jz4770_ddr.o)
+ .bss           0x0000000080136380        0x0 cpu/mips/libmips.a(jz_mddr_init.o)
+ .bss           0x0000000080136380       0x20 lib_mips/libmips.a(mips_linux.o)
+ .bss           0x00000000801363a0     0x1090 drivers/nand/libnand.a(nand_util.o)
+ .bss           0x0000000080137430        0x0 /opt/mipseltools-gcc412-glibc261/lib/gcc/mipsel-linux/4.1.2/libgcc.a(_udivdi3.o)
+ .bss           0x0000000080137430        0x0 /opt/mipseltools-gcc412-glibc261/lib/gcc/mipsel-linux/4.1.2/libgcc.a(_clz.o)
+ COMMON         0x0000000080137430     0x6d00 net/libnet.a(net.o)
+                0x0000000080137430                NetRxPackets
+                0x0000000080137470                BootFile
+                0x00000000801374f0                NetArpWaitPacketBuf
+                0x0000000080137b10                PktBuf
+ COMMON         0x000000008013e130      0x8d0 drivers/nand/libnand.a(nand.o)
+                0x000000008013e130                nand_info
+ COMMON         0x000000008013ea00      0x100 common/libcommon.a(main.o)
+                0x000000008013ea00                console_buffer
+ COMMON         0x000000008013eb00       0x40 common/libcommon.a(cmd_bootm.o)
+                0x000000008013eb00                header
+ COMMON         0x000000008013eb40       0x34 common/libcommon.a(cmd_load.o)
+                0x000000008013eb40                os_data_header
+                0x000000008013eb60                send_parms
+ COMMON         0x000000008013eb74      0x28c board/pisces/libpisces.a(flash.o)
+                0x000000008013eb74                flash_info
+                0x000000008013ee00                uboot_end = .
+
+.scommon        0x000000008013ee00       0x84
+ .scommon       0x000000008013ee00        0x4 lib_mips/libmips.a(board.o)
+                0x000000008013ee00                monitor_flash_len
+ .scommon       0x000000008013ee04       0x44 net/libnet.a(net.o)
+                0x000000008013ee04                NetArpWaitTry
+                0x000000008013ee08                NetArpWaitPacketMAC
+                0x000000008013ee0c                NetOurEther
+                0x000000008013ee14                NetOurIP
+                0x000000008013ee18                NetPingIP
+                0x000000008013ee1c                NetServerIP
+                0x000000008013ee20                NetArpWaitTxPacketSize
+                0x000000008013ee24                NetArpWaitReplyIP
+                0x000000008013ee28                NetArpWaitTxPacket
+                0x000000008013ee2c                NetArpWaitPacketIP
+                0x000000008013ee30                NetState
+                0x000000008013ee34                NetIPID
+                0x000000008013ee38                NetRxPkt
+                0x000000008013ee3c                NetRxPktLen
+                0x000000008013ee40                NetBootFileXferSize
+                0x000000008013ee44                NetArpWaitTimerStart
+ .scommon       0x000000008013ee48        0x8 net/libnet.a(bootp.o)
+                0x000000008013ee48                BootpTry
+                0x000000008013ee4c                BootpID
+ .scommon       0x000000008013ee50        0x4 net/libnet.a(rarp.o)
+                0x000000008013ee50                RarpTry
+ .scommon       0x000000008013ee54       0x1c common/libcommon.a(cmd_load.o)
+                0x000000008013ee54                his_pad_char
+                0x000000008013ee58                os_data_count
+                0x000000008013ee5c                os_data_init
+                0x000000008013ee60                send_ptr
+                0x000000008013ee64                os_data_char
+                0x000000008013ee68                his_eol
+                0x000000008013ee69                his_quote
+                0x000000008013ee6c                his_pad_count
+ .scommon       0x000000008013ee70       0x10 common/libcommon.a(cmd_mem.o)
+                0x000000008013ee70                dp_last_size
+                0x000000008013ee74                dp_last_addr
+                0x000000008013ee78                mm_last_size
+                0x000000008013ee7c                mm_last_addr
+ .scommon       0x000000008013ee80        0x4 lib_generic/libgeneric.a(string.o)
+                0x000000008013ee80                ___strtok
+
+.rel.dyn        0x000000008013ee84        0x0
+ .rel.dyn       0x0000000000000000        0x0 cpu/mips/start.o
+Address of section .text set to 0x80100200
+LOAD cpu/mips/start.o
+START GROUP
+LOAD lib_generic/libgeneric.a
+LOAD board/pisces/libpisces.a
+LOAD cpu/mips/libmips.a
+LOAD lib_mips/libmips.a
+LOAD fs/cramfs/libcramfs.a
+LOAD fs/fat/libfat.a
+LOAD fs/fdos/libfdos.a
+LOAD fs/jffs2/libjffs2.a
+LOAD fs/reiserfs/libreiserfs.a
+LOAD fs/ext2/libext2fs.a
+LOAD net/libnet.a
+LOAD disk/libdisk.a
+LOAD rtc/librtc.a
+LOAD dtt/libdtt.a
+LOAD drivers/libdrivers.a
+LOAD drivers/nand/libnand.a
+LOAD drivers/nand_legacy/libnand_legacy.a
+LOAD drivers/sk98lin/libsk98lin.a
+LOAD post/ingenic/libingenic_post.a
+LOAD common/libcommon.a
+END GROUP
+LOAD /opt/mipseltools-gcc412-glibc261/lib/gcc/mipsel-linux/4.1.2/libgcc.a
+OUTPUT(u-boot elf32-tradlittlemips)
+
+.pdr            0x0000000000000000     0x3300
+ .pdr           0x0000000000000000       0x20 cpu/mips/start.o
+ .pdr           0x0000000000000020       0xe0 lib_mips/libmips.a(board.o)
+ .pdr           0x0000000000000100      0x360 net/libnet.a(net.o)
+ .pdr           0x0000000000000460       0x80 net/libnet.a(tftp.o)
+ .pdr           0x00000000000004e0      0x100 net/libnet.a(bootp.o)
+ .pdr           0x00000000000005e0       0x60 net/libnet.a(rarp.o)
+ .pdr           0x0000000000000640      0x1a0 net/libnet.a(eth.o)
+ .pdr           0x00000000000007e0      0x140 net/libnet.a(nfs.o)
+ .pdr           0x0000000000000920       0x20 drivers/nand/libnand.a(nand.o)
+ .pdr           0x0000000000000940      0x500 drivers/nand/libnand.a(nand_base_jz4770.o)
+ .pdr           0x0000000000000e40       0x20 drivers/nand/libnand.a(nand_ids.o)
+ .pdr           0x0000000000000e60       0x40 drivers/nand/libnand.a(nand_ecc.o)
+ .pdr           0x0000000000000ea0      0x160 drivers/nand/libnand.a(nand_bbt.o)
+ .pdr           0x0000000000001000       0xa0 common/libcommon.a(main.o)
+ .pdr           0x00000000000010a0       0x40 common/libcommon.a(cmd_autoscript.o)
+ .pdr           0x00000000000010e0       0x40 common/libcommon.a(cmd_bdinfo.o)
+ .pdr           0x0000000000001120       0x20 common/libcommon.a(cmd_boot.o)
+ .pdr           0x0000000000001140      0x120 common/libcommon.a(cmd_bootm.o)
+ .pdr           0x0000000000001260       0x20 common/libcommon.a(cmd_console.o)
+ .pdr           0x0000000000001280      0x100 common/libcommon.a(cmd_flash.o)
+ .pdr           0x0000000000001380       0x80 common/libcommon.a(cmd_itest.o)
+ .pdr           0x0000000000001400      0x200 common/libcommon.a(cmd_load.o)
+ .pdr           0x0000000000001600      0x1c0 common/libcommon.a(cmd_mem.o)
+ .pdr           0x00000000000017c0       0x20 common/libcommon.a(cmd_misc.o)
+ .pdr           0x00000000000017e0       0x80 common/libcommon.a(cmd_msc.o)
+ .pdr           0x0000000000001860       0x60 common/libcommon.a(cmd_nand.o)
+ .pdr           0x00000000000018c0       0xe0 common/libcommon.a(cmd_net.o)
+ .pdr           0x00000000000019a0      0x120 common/libcommon.a(cmd_nvedit.o)
+ .pdr           0x0000000000001ac0       0x80 common/libcommon.a(command.o)
+ .pdr           0x0000000000001b40      0x2a0 common/libcommon.a(console.o)
+ .pdr           0x0000000000001de0       0x60 common/libcommon.a(devices.o)
+ .pdr           0x0000000000001e40      0x180 common/libcommon.a(dlmalloc.o)
+ .pdr           0x0000000000001fc0       0xa0 common/libcommon.a(env_common.o)
+ .pdr           0x0000000000002060       0x80 common/libcommon.a(env_msc.o)
+ .pdr           0x00000000000020e0       0x60 common/libcommon.a(exports.o)
+ .pdr           0x0000000000002140       0x80 common/libcommon.a(flash.o)
+ .pdr           0x00000000000021c0      0x1c0 common/libcommon.a(lists.o)
+ .pdr           0x0000000000002380       0x60 common/libcommon.a(s_record.o)
+ .pdr           0x00000000000023e0      0x140 common/libcommon.a(xyzModem.o)
+ .pdr           0x0000000000002520       0x20 common/libcommon.a(crc16.o)
+ .pdr           0x0000000000002540       0x40 lib_generic/libgeneric.a(crc32.o)
+ .pdr           0x0000000000002580       0x40 lib_generic/libgeneric.a(display_options.o)
+ .pdr           0x00000000000025c0      0x240 lib_generic/libgeneric.a(string.o)
+ .pdr           0x0000000000002800       0xe0 lib_generic/libgeneric.a(vsprintf.o)
+ .pdr           0x00000000000028e0      0x200 lib_generic/libgeneric.a(zlib.o)
+ .pdr           0x0000000000002ae0        0x0 lib_generic/libgeneric.a(ctype.o)
+ .pdr           0x0000000000002ae0       0x40 board/pisces/libpisces.a(pisces.o)
+ .pdr           0x0000000000002b20       0x80 board/pisces/libpisces.a(flash.o)
+ .pdr           0x0000000000002ba0       0xe0 cpu/mips/libmips.a(jz_serial.o)
+ .pdr           0x0000000000002c80       0xc0 cpu/mips/libmips.a(cpu.o)
+ .pdr           0x0000000000002d40       0x40 cpu/mips/libmips.a(interrupts.o)
+ .pdr           0x0000000000002d80      0x1c0 cpu/mips/libmips.a(jz4770.o)
+ .pdr           0x0000000000002f40      0x100 cpu/mips/libmips.a(jz4770_nand.o)
+ .pdr           0x0000000000003040       0xc0 cpu/mips/libmips.a(jz4770_eth.o)
+ .pdr           0x0000000000003100       0xa0 cpu/mips/libmips.a(jz4770_ddr.o)
+ .pdr           0x00000000000031a0       0x20 cpu/mips/libmips.a(jz_mddr_init.o)
+ .pdr           0x00000000000031c0       0x40 lib_mips/libmips.a(mips_linux.o)
+ .pdr           0x0000000000003200       0xe0 drivers/nand/libnand.a(nand_util.o)
+ .pdr           0x00000000000032e0       0x20 /opt/mipseltools-gcc412-glibc261/lib/gcc/mipsel-linux/4.1.2/libgcc.a(_udivdi3.o)
+ .pdr           0x0000000000003300        0x0 /opt/mipseltools-gcc412-glibc261/lib/gcc/mipsel-linux/4.1.2/libgcc.a(_clz.o)
+
+.debug_line     0x0000000000000000       0x8f
+ .debug_line    0x0000000000000000       0x8f cpu/mips/start.o
+
+.debug_info     0x0000000000000000       0x64
+ .debug_info    0x0000000000000000       0x64 cpu/mips/start.o
+
+.debug_abbrev   0x0000000000000000       0x14
+ .debug_abbrev  0x0000000000000000       0x14 cpu/mips/start.o
+
+.debug_aranges  0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 cpu/mips/start.o
+
+.mdebug.abi32   0x0000000000000000        0x0
+ .mdebug.abi32  0x0000000000000000        0x0 lib_mips/libmips.a(board.o)
+ .mdebug.abi32  0x0000000000000000        0x0 net/libnet.a(net.o)
+ .mdebug.abi32  0x0000000000000000        0x0 net/libnet.a(tftp.o)
+ .mdebug.abi32  0x0000000000000000        0x0 net/libnet.a(bootp.o)
+ .mdebug.abi32  0x0000000000000000        0x0 net/libnet.a(rarp.o)
+ .mdebug.abi32  0x0000000000000000        0x0 net/libnet.a(eth.o)
+ .mdebug.abi32  0x0000000000000000        0x0 net/libnet.a(nfs.o)
+ .mdebug.abi32  0x0000000000000000        0x0 drivers/nand/libnand.a(nand.o)
+ .mdebug.abi32  0x0000000000000000        0x0 drivers/nand/libnand.a(nand_base_jz4770.o)
+ .mdebug.abi32  0x0000000000000000        0x0 drivers/nand/libnand.a(nand_ids.o)
+ .mdebug.abi32  0x0000000000000000        0x0 drivers/nand/libnand.a(nand_ecc.o)
+ .mdebug.abi32  0x0000000000000000        0x0 drivers/nand/libnand.a(nand_bbt.o)
+ .mdebug.abi32  0x0000000000000000        0x0 common/libcommon.a(main.o)
+ .mdebug.abi32  0x0000000000000000        0x0 common/libcommon.a(cmd_autoscript.o)
+ .mdebug.abi32  0x0000000000000000        0x0 common/libcommon.a(cmd_bdinfo.o)
+ .mdebug.abi32  0x0000000000000000        0x0 common/libcommon.a(cmd_boot.o)
+ .mdebug.abi32  0x0000000000000000        0x0 common/libcommon.a(cmd_bootm.o)
+ .mdebug.abi32  0x0000000000000000        0x0 common/libcommon.a(cmd_console.o)
+ .mdebug.abi32  0x0000000000000000        0x0 common/libcommon.a(cmd_flash.o)
+ .mdebug.abi32  0x0000000000000000        0x0 common/libcommon.a(cmd_itest.o)
+ .mdebug.abi32  0x0000000000000000        0x0 common/libcommon.a(cmd_load.o)
+ .mdebug.abi32  0x0000000000000000        0x0 common/libcommon.a(cmd_mem.o)
+ .mdebug.abi32  0x0000000000000000        0x0 common/libcommon.a(cmd_misc.o)
+ .mdebug.abi32  0x0000000000000000        0x0 common/libcommon.a(cmd_msc.o)
+ .mdebug.abi32  0x0000000000000000        0x0 common/libcommon.a(cmd_nand.o)
+ .mdebug.abi32  0x0000000000000000        0x0 common/libcommon.a(cmd_net.o)
+ .mdebug.abi32  0x0000000000000000        0x0 common/libcommon.a(cmd_nvedit.o)
+ .mdebug.abi32  0x0000000000000000        0x0 common/libcommon.a(command.o)
+ .mdebug.abi32  0x0000000000000000        0x0 common/libcommon.a(console.o)
+ .mdebug.abi32  0x0000000000000000        0x0 common/libcommon.a(devices.o)
+ .mdebug.abi32  0x0000000000000000        0x0 common/libcommon.a(dlmalloc.o)
+ .mdebug.abi32  0x0000000000000000        0x0 common/libcommon.a(env_common.o)
+ .mdebug.abi32  0x0000000000000000        0x0 common/libcommon.a(env_msc.o)
+ .mdebug.abi32  0x0000000000000000        0x0 common/libcommon.a(exports.o)
+ .mdebug.abi32  0x0000000000000000        0x0 common/libcommon.a(flash.o)
+ .mdebug.abi32  0x0000000000000000        0x0 common/libcommon.a(lists.o)
+ .mdebug.abi32  0x0000000000000000        0x0 common/libcommon.a(s_record.o)
+ .mdebug.abi32  0x0000000000000000        0x0 common/libcommon.a(xyzModem.o)
+ .mdebug.abi32  0x0000000000000000        0x0 common/libcommon.a(crc16.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib_generic/libgeneric.a(crc32.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib_generic/libgeneric.a(display_options.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib_generic/libgeneric.a(string.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib_generic/libgeneric.a(vsprintf.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib_generic/libgeneric.a(zlib.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib_generic/libgeneric.a(ctype.o)
+ .mdebug.abi32  0x0000000000000000        0x0 board/pisces/libpisces.a(pisces.o)
+ .mdebug.abi32  0x0000000000000000        0x0 board/pisces/libpisces.a(flash.o)
+ .mdebug.abi32  0x0000000000000000        0x0 cpu/mips/libmips.a(jz_serial.o)
+ .mdebug.abi32  0x0000000000000000        0x0 cpu/mips/libmips.a(cpu.o)
+ .mdebug.abi32  0x0000000000000000        0x0 cpu/mips/libmips.a(interrupts.o)
+ .mdebug.abi32  0x0000000000000000        0x0 cpu/mips/libmips.a(jz4770.o)
+ .mdebug.abi32  0x0000000000000000        0x0 cpu/mips/libmips.a(jz4770_nand.o)
+ .mdebug.abi32  0x0000000000000000        0x0 cpu/mips/libmips.a(jz4770_eth.o)
+ .mdebug.abi32  0x0000000000000000        0x0 cpu/mips/libmips.a(jz4770_ddr.o)
+ .mdebug.abi32  0x0000000000000000        0x0 cpu/mips/libmips.a(jz_mddr_init.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib_mips/libmips.a(mips_linux.o)
+ .mdebug.abi32  0x0000000000000000        0x0 drivers/nand/libnand.a(nand_util.o)
+ .mdebug.abi32  0x0000000000000000        0x0 /opt/mipseltools-gcc412-glibc261/lib/gcc/mipsel-linux/4.1.2/libgcc.a(_udivdi3.o)
+ .mdebug.abi32  0x0000000000000000        0x0 /opt/mipseltools-gcc412-glibc261/lib/gcc/mipsel-linux/4.1.2/libgcc.a(_clz.o)
+
+.debug_abbrev.1
+                0x0000000000000000      0x2aa
+ .debug_abbrev  0x0000000000000000      0x2aa lib_mips/libmips.a(board.o)
+
+.debug_info.2   0x0000000000000000      0x6f4
+ .debug_info    0x0000000000000000      0x6f4 lib_mips/libmips.a(board.o)
+
+.debug_line.3   0x0000000000000000      0x256
+ .debug_line    0x0000000000000000      0x256 lib_mips/libmips.a(board.o)
+
+.debug_frame    0x0000000000000000     0x2c14
+ .debug_frame   0x0000000000000000       0xc0 lib_mips/libmips.a(board.o)
+ .debug_frame   0x00000000000000c0      0x2ac net/libnet.a(net.o)
+ .debug_frame   0x000000000000036c       0x88 net/libnet.a(tftp.o)
+ .debug_frame   0x00000000000003f4       0xe4 net/libnet.a(bootp.o)
+ .debug_frame   0x00000000000004d8       0x5c net/libnet.a(rarp.o)
+ .debug_frame   0x0000000000000534      0x150 net/libnet.a(eth.o)
+ .debug_frame   0x0000000000000684      0x138 net/libnet.a(nfs.o)
+ .debug_frame   0x00000000000007bc       0x2c drivers/nand/libnand.a(nand.o)
+ .debug_frame   0x00000000000007e8      0x410 drivers/nand/libnand.a(nand_base_jz4770.o)
+ .debug_frame   0x0000000000000bf8       0x20 drivers/nand/libnand.a(nand_ids.o)
+ .debug_frame   0x0000000000000c18       0x30 drivers/nand/libnand.a(nand_ecc.o)
+ .debug_frame   0x0000000000000c48      0x184 drivers/nand/libnand.a(nand_bbt.o)
+ .debug_frame   0x0000000000000dcc       0xc8 common/libcommon.a(main.o)
+ .debug_frame   0x0000000000000e94       0x48 common/libcommon.a(cmd_autoscript.o)
+ .debug_frame   0x0000000000000edc       0x44 common/libcommon.a(cmd_bdinfo.o)
+ .debug_frame   0x0000000000000f20       0x2c common/libcommon.a(cmd_boot.o)
+ .debug_frame   0x0000000000000f4c      0x124 common/libcommon.a(cmd_bootm.o)
+ .debug_frame   0x0000000000001070       0x38 common/libcommon.a(cmd_console.o)
+ .debug_frame   0x00000000000010a8      0x104 common/libcommon.a(cmd_flash.o)
+ .debug_frame   0x00000000000011ac       0x78 common/libcommon.a(cmd_itest.o)
+ .debug_frame   0x0000000000001224      0x194 common/libcommon.a(cmd_load.o)
+ .debug_frame   0x00000000000013b8      0x1bc common/libcommon.a(cmd_mem.o)
+ .debug_frame   0x0000000000001574       0x30 common/libcommon.a(cmd_misc.o)
+ .debug_frame   0x00000000000015a4       0xa4 common/libcommon.a(cmd_msc.o)
+ .debug_frame   0x0000000000001648       0x8c common/libcommon.a(cmd_nand.o)
+ .debug_frame   0x00000000000016d4       0x9c common/libcommon.a(cmd_net.o)
+ .debug_frame   0x0000000000001770      0x13c common/libcommon.a(cmd_nvedit.o)
+ .debug_frame   0x00000000000018ac       0x98 common/libcommon.a(command.o)
+ .debug_frame   0x0000000000001944      0x1c8 common/libcommon.a(console.o)
+ .debug_frame   0x0000000000001b0c       0x58 common/libcommon.a(devices.o)
+ .debug_frame   0x0000000000001b64      0x128 common/libcommon.a(dlmalloc.o)
+ .debug_frame   0x0000000000001c8c       0x78 common/libcommon.a(env_common.o)
+ .debug_frame   0x0000000000001d04       0x5c common/libcommon.a(env_msc.o)
+ .debug_frame   0x0000000000001d60       0x48 common/libcommon.a(exports.o)
+ .debug_frame   0x0000000000001da8       0x64 common/libcommon.a(flash.o)
+ .debug_frame   0x0000000000001e0c      0x12c common/libcommon.a(lists.o)
+ .debug_frame   0x0000000000001f38       0x64 common/libcommon.a(s_record.o)
+ .debug_frame   0x0000000000001f9c      0x118 common/libcommon.a(xyzModem.o)
+ .debug_frame   0x00000000000020b4       0x20 common/libcommon.a(crc16.o)
+ .debug_frame   0x00000000000020d4       0x30 lib_generic/libgeneric.a(crc32.o)
+ .debug_frame   0x0000000000002104       0x44 lib_generic/libgeneric.a(display_options.o)
+ .debug_frame   0x0000000000002148      0x16c lib_generic/libgeneric.a(string.o)
+ .debug_frame   0x00000000000022b4       0xb0 lib_generic/libgeneric.a(vsprintf.o)
+ .debug_frame   0x0000000000002364      0x1cc lib_generic/libgeneric.a(zlib.o)
+ .debug_frame   0x0000000000002530       0x40 board/pisces/libpisces.a(pisces.o)
+ .debug_frame   0x0000000000002570       0xa0 board/pisces/libpisces.a(flash.o)
+ .debug_frame   0x0000000000002610       0xa8 cpu/mips/libmips.a(jz_serial.o)
+ .debug_frame   0x00000000000026b8       0x80 cpu/mips/libmips.a(cpu.o)
+ .debug_frame   0x0000000000002738       0x30 cpu/mips/libmips.a(interrupts.o)
+ .debug_frame   0x0000000000002768      0x120 cpu/mips/libmips.a(jz4770.o)
+ .debug_frame   0x0000000000002888       0xa4 cpu/mips/libmips.a(jz4770_nand.o)
+ .debug_frame   0x000000000000292c       0xb8 cpu/mips/libmips.a(jz4770_eth.o)
+ .debug_frame   0x00000000000029e4       0x94 cpu/mips/libmips.a(jz4770_ddr.o)
+ .debug_frame   0x0000000000002a78       0x24 cpu/mips/libmips.a(jz_mddr_init.o)
+ .debug_frame   0x0000000000002a9c       0x58 lib_mips/libmips.a(mips_linux.o)
+ .debug_frame   0x0000000000002af4      0x100 drivers/nand/libnand.a(nand_util.o)
+ .debug_frame   0x0000000000002bf4       0x20 /opt/mipseltools-gcc412-glibc261/lib/gcc/mipsel-linux/4.1.2/libgcc.a(_udivdi3.o)
+
+.debug_loc      0x0000000000000000    0x1af79
+ .debug_loc     0x0000000000000000      0x281 lib_mips/libmips.a(board.o)
+ .debug_loc     0x0000000000000281      0xde5 net/libnet.a(net.o)
+ .debug_loc     0x0000000000001066      0x3f3 net/libnet.a(tftp.o)
+ .debug_loc     0x0000000000001459      0x6ee net/libnet.a(bootp.o)
+ .debug_loc     0x0000000000001b47      0x134 net/libnet.a(rarp.o)
+ .debug_loc     0x0000000000001c7b      0x6a5 net/libnet.a(eth.o)
+ .debug_loc     0x0000000000002320      0x714 net/libnet.a(nfs.o)
+ .debug_loc     0x0000000000002a34       0x32 drivers/nand/libnand.a(nand.o)
+ .debug_loc     0x0000000000002a66     0x2981 drivers/nand/libnand.a(nand_base_jz4770.o)
+ .debug_loc     0x00000000000053e7      0x252 drivers/nand/libnand.a(nand_ecc.o)
+ .debug_loc     0x0000000000005639     0x1823 drivers/nand/libnand.a(nand_bbt.o)
+ .debug_loc     0x0000000000006e5c      0xa0b common/libcommon.a(main.o)
+ .debug_loc     0x0000000000007867      0x253 common/libcommon.a(cmd_autoscript.o)
+ .debug_loc     0x0000000000007aba       0xf9 common/libcommon.a(cmd_bdinfo.o)
+ .debug_loc     0x0000000000007bb3       0xf1 common/libcommon.a(cmd_boot.o)
+ .debug_loc     0x0000000000007ca4      0xc08 common/libcommon.a(cmd_bootm.o)
+ .debug_loc     0x00000000000088ac       0xa8 common/libcommon.a(cmd_console.o)
+ .debug_loc     0x0000000000008954     0x103a common/libcommon.a(cmd_flash.o)
+ .debug_loc     0x000000000000998e      0x4d1 common/libcommon.a(cmd_itest.o)
+ .debug_loc     0x0000000000009e5f      0xdf1 common/libcommon.a(cmd_load.o)
+ .debug_loc     0x000000000000ac50     0x1327 common/libcommon.a(cmd_mem.o)
+ .debug_loc     0x000000000000bf77       0xe9 common/libcommon.a(cmd_misc.o)
+ .debug_loc     0x000000000000c060      0x90f common/libcommon.a(cmd_msc.o)
+ .debug_loc     0x000000000000c96f     0x1e51 common/libcommon.a(cmd_nand.o)
+ .debug_loc     0x000000000000e7c0      0x4c2 common/libcommon.a(cmd_net.o)
+ .debug_loc     0x000000000000ec82     0x1065 common/libcommon.a(cmd_nvedit.o)
+ .debug_loc     0x000000000000fce7      0x617 common/libcommon.a(command.o)
+ .debug_loc     0x00000000000102fe      0x572 common/libcommon.a(console.o)
+ .debug_loc     0x0000000000010870       0xa2 common/libcommon.a(devices.o)
+ .debug_loc     0x0000000000010912     0x17ac common/libcommon.a(dlmalloc.o)
+ .debug_loc     0x00000000000120be       0x83 common/libcommon.a(env_common.o)
+ .debug_loc     0x0000000000012141       0x5e common/libcommon.a(env_msc.o)
+ .debug_loc     0x000000000001219f       0x1f common/libcommon.a(exports.o)
+ .debug_loc     0x00000000000121be      0x3b5 common/libcommon.a(flash.o)
+ .debug_loc     0x0000000000012573      0x51d common/libcommon.a(lists.o)
+ .debug_loc     0x0000000000012a90      0x43e common/libcommon.a(s_record.o)
+ .debug_loc     0x0000000000012ece      0x69c common/libcommon.a(xyzModem.o)
+ .debug_loc     0x000000000001356a       0x1e common/libcommon.a(crc16.o)
+ .debug_loc     0x0000000000013588      0x154 lib_generic/libgeneric.a(crc32.o)
+ .debug_loc     0x00000000000136dc       0xbe lib_generic/libgeneric.a(display_options.o)
+ .debug_loc     0x000000000001379a      0x5fb lib_generic/libgeneric.a(string.o)
+ .debug_loc     0x0000000000013d95      0x8d2 lib_generic/libgeneric.a(vsprintf.o)
+ .debug_loc     0x0000000000014667     0x36a2 lib_generic/libgeneric.a(zlib.o)
+ .debug_loc     0x0000000000017d09       0x1f board/pisces/libpisces.a(pisces.o)
+ .debug_loc     0x0000000000017d28      0x44f board/pisces/libpisces.a(flash.o)
+ .debug_loc     0x0000000000018177      0x126 cpu/mips/libmips.a(jz_serial.o)
+ .debug_loc     0x000000000001829d       0xbb cpu/mips/libmips.a(cpu.o)
+ .debug_loc     0x0000000000018358      0x23a cpu/mips/libmips.a(jz4770.o)
+ .debug_loc     0x0000000000018592      0x3e4 cpu/mips/libmips.a(jz4770_nand.o)
+ .debug_loc     0x0000000000018976      0x3cf cpu/mips/libmips.a(jz4770_eth.o)
+ .debug_loc     0x0000000000018d45      0x64c cpu/mips/libmips.a(jz4770_ddr.o)
+ .debug_loc     0x0000000000019391       0x6b cpu/mips/libmips.a(jz_mddr_init.o)
+ .debug_loc     0x00000000000193fc      0x45b lib_mips/libmips.a(mips_linux.o)
+ .debug_loc     0x0000000000019857      0xd60 drivers/nand/libnand.a(nand_util.o)
+ .debug_loc     0x000000000001a5b7      0x9c2 /opt/mipseltools-gcc412-glibc261/lib/gcc/mipsel-linux/4.1.2/libgcc.a(_udivdi3.o)
+
+.debug_pubnames
+                0x0000000000000000     0x1fc1
+ .debug_pubnames
+                0x0000000000000000       0x88 lib_mips/libmips.a(board.o)
+ .debug_pubnames
+                0x0000000000000088      0x40c net/libnet.a(net.o)
+ .debug_pubnames
+                0x0000000000000494       0x20 net/libnet.a(tftp.o)
+ .debug_pubnames
+                0x00000000000004b4       0x82 net/libnet.a(bootp.o)
+ .debug_pubnames
+                0x0000000000000536       0x2e net/libnet.a(rarp.o)
+ .debug_pubnames
+                0x0000000000000564       0xf4 net/libnet.a(eth.o)
+ .debug_pubnames
+                0x0000000000000658       0x1f net/libnet.a(nfs.o)
+ .debug_pubnames
+                0x0000000000000677       0x43 drivers/nand/libnand.a(nand.o)
+ .debug_pubnames
+                0x00000000000006ba       0x67 drivers/nand/libnand.a(nand_base_jz4770.o)
+ .debug_pubnames
+                0x0000000000000721       0x4a drivers/nand/libnand.a(nand_ids.o)
+ .debug_pubnames
+                0x000000000000076b       0x3f drivers/nand/libnand.a(nand_ecc.o)
+ .debug_pubnames
+                0x00000000000007aa       0x60 drivers/nand/libnand.a(nand_bbt.o)
+ .debug_pubnames
+                0x000000000000080a       0x5b common/libcommon.a(main.o)
+ .debug_pubnames
+                0x0000000000000865       0x4c common/libcommon.a(cmd_autoscript.o)
+ .debug_pubnames
+                0x00000000000008b1       0x3f common/libcommon.a(cmd_bdinfo.o)
+ .debug_pubnames
+                0x00000000000008f0       0x47 common/libcommon.a(cmd_boot.o)
+ .debug_pubnames
+                0x0000000000000937       0xeb common/libcommon.a(cmd_bootm.o)
+ .debug_pubnames
+                0x0000000000000a22       0x3a common/libcommon.a(cmd_console.o)
+ .debug_pubnames
+                0x0000000000000a5c       0xb2 common/libcommon.a(cmd_flash.o)
+ .debug_pubnames
+                0x0000000000000b0e       0x53 common/libcommon.a(cmd_itest.o)
+ .debug_pubnames
+                0x0000000000000b61      0x1d0 common/libcommon.a(cmd_load.o)
+ .debug_pubnames
+                0x0000000000000d31      0x208 common/libcommon.a(cmd_mem.o)
+ .debug_pubnames
+                0x0000000000000f39       0x36 common/libcommon.a(cmd_misc.o)
+ .debug_pubnames
+                0x0000000000000f6f       0x4d common/libcommon.a(cmd_msc.o)
+ .debug_pubnames
+                0x0000000000000fbc       0x5b common/libcommon.a(cmd_nand.o)
+ .debug_pubnames
+                0x0000000000001017       0xe8 common/libcommon.a(cmd_net.o)
+ .debug_pubnames
+                0x00000000000010ff       0xfe common/libcommon.a(cmd_nvedit.o)
+ .debug_pubnames
+                0x00000000000011fd       0xaa common/libcommon.a(command.o)
+ .debug_pubnames
+                0x00000000000012a7      0x115 common/libcommon.a(console.o)
+ .debug_pubnames
+                0x00000000000013bc       0x7d common/libcommon.a(devices.o)
+ .debug_pubnames
+                0x0000000000001439       0xba common/libcommon.a(dlmalloc.o)
+ .debug_pubnames
+                0x00000000000014f3       0xac common/libcommon.a(env_common.o)
+ .debug_pubnames
+                0x000000000000159f       0x7c common/libcommon.a(env_msc.o)
+ .debug_pubnames
+                0x000000000000161b       0x3c common/libcommon.a(exports.o)
+ .debug_pubnames
+                0x0000000000001657       0x53 common/libcommon.a(flash.o)
+ .debug_pubnames
+                0x00000000000016aa      0x116 common/libcommon.a(lists.o)
+ .debug_pubnames
+                0x00000000000017c0       0x22 common/libcommon.a(s_record.o)
+ .debug_pubnames
+                0x00000000000017e2       0xd5 common/libcommon.a(xyzModem.o)
+ .debug_pubnames
+                0x00000000000018b7       0x20 common/libcommon.a(crc16.o)
+ .debug_pubnames
+                0x00000000000018d7       0x2e lib_generic/libgeneric.a(crc32.o)
+ .debug_pubnames
+                0x0000000000001905       0x35 lib_generic/libgeneric.a(display_options.o)
+ .debug_pubnames
+                0x000000000000193a       0xec lib_generic/libgeneric.a(string.o)
+ .debug_pubnames
+                0x0000000000001a26       0x5a lib_generic/libgeneric.a(vsprintf.o)
+ .debug_pubnames
+                0x0000000000001a80       0xab lib_generic/libgeneric.a(zlib.o)
+ .debug_pubnames
+                0x0000000000001b2b       0x1d lib_generic/libgeneric.a(ctype.o)
+ .debug_pubnames
+                0x0000000000001b48       0x36 board/pisces/libpisces.a(pisces.o)
+ .debug_pubnames
+                0x0000000000001b7e       0x64 board/pisces/libpisces.a(flash.o)
+ .debug_pubnames
+                0x0000000000001be2       0x87 cpu/mips/libmips.a(jz_serial.o)
+ .debug_pubnames
+                0x0000000000001c69       0x7f cpu/mips/libmips.a(cpu.o)
+ .debug_pubnames
+                0x0000000000001ce8       0x3f cpu/mips/libmips.a(interrupts.o)
+ .debug_pubnames
+                0x0000000000001d27       0xed cpu/mips/libmips.a(jz4770.o)
+ .debug_pubnames
+                0x0000000000001e14       0x43 cpu/mips/libmips.a(jz4770_nand.o)
+ .debug_pubnames
+                0x0000000000001e57       0x29 cpu/mips/libmips.a(jz4770_eth.o)
+ .debug_pubnames
+                0x0000000000001e80       0x2e cpu/mips/libmips.a(jz4770_ddr.o)
+ .debug_pubnames
+                0x0000000000001eae       0x23 cpu/mips/libmips.a(jz_mddr_init.o)
+ .debug_pubnames
+                0x0000000000001ed1       0x2c lib_mips/libmips.a(mips_linux.o)
+ .debug_pubnames
+                0x0000000000001efd       0x84 drivers/nand/libnand.a(nand_util.o)
+ .debug_pubnames
+                0x0000000000001f81       0x20 /opt/mipseltools-gcc412-glibc261/lib/gcc/mipsel-linux/4.1.2/libgcc.a(_udivdi3.o)
+ .debug_pubnames
+                0x0000000000001fa1       0x20 /opt/mipseltools-gcc412-glibc261/lib/gcc/mipsel-linux/4.1.2/libgcc.a(_clz.o)
+
+.debug_aranges.4
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 lib_mips/libmips.a(board.o)
+
+.debug_ranges   0x0000000000000000     0x2e60
+ .debug_ranges  0x0000000000000000       0x18 lib_mips/libmips.a(board.o)
+ .debug_ranges  0x0000000000000018      0x1d8 net/libnet.a(net.o)
+ .debug_ranges  0x00000000000001f0      0x130 net/libnet.a(tftp.o)
+ .debug_ranges  0x0000000000000320      0x268 net/libnet.a(bootp.o)
+ .debug_ranges  0x0000000000000588       0x78 net/libnet.a(eth.o)
+ .debug_ranges  0x0000000000000600      0x2f0 net/libnet.a(nfs.o)
+ .debug_ranges  0x00000000000008f0       0x18 drivers/nand/libnand.a(nand.o)
+ .debug_ranges  0x0000000000000908      0x300 drivers/nand/libnand.a(nand_base_jz4770.o)
+ .debug_ranges  0x0000000000000c08      0x1a8 drivers/nand/libnand.a(nand_bbt.o)
+ .debug_ranges  0x0000000000000db0      0x180 common/libcommon.a(main.o)
+ .debug_ranges  0x0000000000000f30      0x100 common/libcommon.a(cmd_bootm.o)
+ .debug_ranges  0x0000000000001030       0x18 common/libcommon.a(cmd_console.o)
+ .debug_ranges  0x0000000000001048       0x98 common/libcommon.a(cmd_flash.o)
+ .debug_ranges  0x00000000000010e0       0x60 common/libcommon.a(cmd_itest.o)
+ .debug_ranges  0x0000000000001140      0x2d8 common/libcommon.a(cmd_load.o)
+ .debug_ranges  0x0000000000001418       0x60 common/libcommon.a(cmd_mem.o)
+ .debug_ranges  0x0000000000001478      0x440 common/libcommon.a(cmd_msc.o)
+ .debug_ranges  0x00000000000018b8      0x280 common/libcommon.a(cmd_nand.o)
+ .debug_ranges  0x0000000000001b38       0x58 common/libcommon.a(cmd_net.o)
+ .debug_ranges  0x0000000000001b90       0xc8 common/libcommon.a(cmd_nvedit.o)
+ .debug_ranges  0x0000000000001c58       0x70 common/libcommon.a(command.o)
+ .debug_ranges  0x0000000000001cc8       0x48 common/libcommon.a(console.o)
+ .debug_ranges  0x0000000000001d10       0x40 common/libcommon.a(devices.o)
+ .debug_ranges  0x0000000000001d50      0x148 common/libcommon.a(dlmalloc.o)
+ .debug_ranges  0x0000000000001e98       0x28 common/libcommon.a(env_msc.o)
+ .debug_ranges  0x0000000000001ec0       0x68 common/libcommon.a(flash.o)
+ .debug_ranges  0x0000000000001f28       0x18 common/libcommon.a(lists.o)
+ .debug_ranges  0x0000000000001f40       0x30 common/libcommon.a(xyzModem.o)
+ .debug_ranges  0x0000000000001f70       0x30 lib_generic/libgeneric.a(string.o)
+ .debug_ranges  0x0000000000001fa0       0x38 lib_generic/libgeneric.a(vsprintf.o)
+ .debug_ranges  0x0000000000001fd8      0x588 lib_generic/libgeneric.a(zlib.o)
+ .debug_ranges  0x0000000000002560       0xd0 board/pisces/libpisces.a(flash.o)
+ .debug_ranges  0x0000000000002630       0x40 cpu/mips/libmips.a(jz_serial.o)
+ .debug_ranges  0x0000000000002670       0x80 cpu/mips/libmips.a(jz4770.o)
+ .debug_ranges  0x00000000000026f0       0x28 cpu/mips/libmips.a(jz4770_nand.o)
+ .debug_ranges  0x0000000000002718      0x210 cpu/mips/libmips.a(jz4770_eth.o)
+ .debug_ranges  0x0000000000002928      0x188 cpu/mips/libmips.a(jz4770_ddr.o)
+ .debug_ranges  0x0000000000002ab0      0x118 lib_mips/libmips.a(mips_linux.o)
+ .debug_ranges  0x0000000000002bc8      0x108 drivers/nand/libnand.a(nand_util.o)
+ .debug_ranges  0x0000000000002cd0      0x190 /opt/mipseltools-gcc412-glibc261/lib/gcc/mipsel-linux/4.1.2/libgcc.a(_udivdi3.o)
+
+.debug_str      0x0000000000000000     0x4b19
+ .debug_str     0x0000000000000000      0x36c lib_mips/libmips.a(board.o)
+                                        0x3d9 (size before relaxing)
+ .debug_str     0x000000000000036c      0x65e net/libnet.a(net.o)
+                                        0x888 (size before relaxing)
+ .debug_str     0x00000000000009ca      0x11a net/libnet.a(tftp.o)
+                                        0x2e1 (size before relaxing)
+ .debug_str     0x0000000000000ae4      0x252 net/libnet.a(bootp.o)
+                                        0x455 (size before relaxing)
+ .debug_str     0x0000000000000d36       0x4c net/libnet.a(rarp.o)
+                                        0x1b7 (size before relaxing)
+ .debug_str     0x0000000000000d82      0x140 net/libnet.a(eth.o)
+                                        0x304 (size before relaxing)
+ .debug_str     0x0000000000000ec2      0x263 net/libnet.a(nfs.o)
+                                        0x485 (size before relaxing)
+ .debug_str     0x0000000000001125      0x365 drivers/nand/libnand.a(nand.o)
+                                        0x5ba (size before relaxing)
+ .debug_str     0x000000000000148a      0x63d drivers/nand/libnand.a(nand_base_jz4770.o)
+                                        0xbfe (size before relaxing)
+ .debug_str     0x0000000000001ac7       0x19 drivers/nand/libnand.a(nand_ids.o)
+                                        0x1da (size before relaxing)
+ .debug_str     0x0000000000001ae0       0x7b drivers/nand/libnand.a(nand_ecc.o)
+                                        0x39b (size before relaxing)
+ .debug_str     0x0000000000001b5b      0x238 drivers/nand/libnand.a(nand_bbt.o)
+                                        0x7c9 (size before relaxing)
+ .debug_str     0x0000000000001d93      0x144 common/libcommon.a(main.o)
+                                        0x261 (size before relaxing)
+ .debug_str     0x0000000000001ed7       0xbc common/libcommon.a(cmd_autoscript.o)
+                                        0x22c (size before relaxing)
+ .debug_str     0x0000000000001f93       0x35 common/libcommon.a(cmd_bdinfo.o)
+                                        0x26b (size before relaxing)
+ .debug_str     0x0000000000001fc8       0x34 common/libcommon.a(cmd_boot.o)
+                                        0x15d (size before relaxing)
+ .debug_str     0x0000000000001ffc      0x1ff common/libcommon.a(cmd_bootm.o)
+                                        0x5ad (size before relaxing)
+ .debug_str     0x00000000000021fb       0xc5 common/libcommon.a(cmd_console.o)
+                                        0x1fc (size before relaxing)
+ .debug_str     0x00000000000022c0      0x148 common/libcommon.a(cmd_flash.o)
+                                        0x2f1 (size before relaxing)
+ .debug_str     0x0000000000002408       0x90 common/libcommon.a(cmd_itest.o)
+                                        0x1df (size before relaxing)
+ .debug_str     0x0000000000002498      0x317 common/libcommon.a(cmd_load.o)
+                                        0x5ff (size before relaxing)
+ .debug_str     0x00000000000027af      0x290 common/libcommon.a(cmd_mem.o)
+                                        0x436 (size before relaxing)
+ .debug_str     0x0000000000002a3f       0x27 common/libcommon.a(cmd_misc.o)
+                                        0x151 (size before relaxing)
+ .debug_str     0x0000000000002a66      0x12b common/libcommon.a(cmd_msc.o)
+                                        0x2bc (size before relaxing)
+ .debug_str     0x0000000000002b91      0x1c0 common/libcommon.a(cmd_nand.o)
+                                        0x8b7 (size before relaxing)
+ .debug_str     0x0000000000002d51       0xd2 common/libcommon.a(cmd_net.o)
+                                        0x2e8 (size before relaxing)
+ .debug_str     0x0000000000002e23       0xf4 common/libcommon.a(cmd_nvedit.o)
+                                        0x3ff (size before relaxing)
+ .debug_str     0x0000000000002f17       0xad common/libcommon.a(command.o)
+                                        0x244 (size before relaxing)
+ .debug_str     0x0000000000002fc4       0xee common/libcommon.a(console.o)
+                                        0x3ea (size before relaxing)
+ .debug_str     0x00000000000030b2       0x56 common/libcommon.a(devices.o)
+                                        0x311 (size before relaxing)
+ .debug_str     0x0000000000003108      0x2a3 common/libcommon.a(dlmalloc.o)
+                                        0x4f7 (size before relaxing)
+ .debug_str     0x00000000000033ab       0xa5 common/libcommon.a(env_common.o)
+                                        0x2a1 (size before relaxing)
+ .debug_str     0x0000000000003450       0x54 common/libcommon.a(env_msc.o)
+                                        0x2ae (size before relaxing)
+ .debug_str     0x00000000000034a4       0x25 common/libcommon.a(exports.o)
+                                        0x209 (size before relaxing)
+ .debug_str     0x00000000000034c9       0x46 common/libcommon.a(flash.o)
+                                        0x195 (size before relaxing)
+ .debug_str     0x000000000000350f      0x1dc common/libcommon.a(lists.o)
+                                        0x320 (size before relaxing)
+ .debug_str     0x00000000000036eb       0x3a common/libcommon.a(s_record.o)
+                                        0x122 (size before relaxing)
+ .debug_str     0x0000000000003725      0x1b1 common/libcommon.a(xyzModem.o)
+                                        0x2e3 (size before relaxing)
+ .debug_str     0x00000000000038d6       0x25 common/libcommon.a(crc16.o)
+                                         0xfd (size before relaxing)
+ .debug_str     0x00000000000038fb       0x60 lib_generic/libgeneric.a(crc32.o)
+                                        0x11a (size before relaxing)
+ .debug_str     0x000000000000395b       0x2d lib_generic/libgeneric.a(display_options.o)
+                                        0x118 (size before relaxing)
+ .debug_str     0x0000000000003988       0x9e lib_generic/libgeneric.a(string.o)
+                                        0x1c0 (size before relaxing)
+ .debug_str     0x0000000000003a26       0x79 lib_generic/libgeneric.a(vsprintf.o)
+                                        0x1ae (size before relaxing)
+ .debug_str     0x0000000000003a9f      0x3bd lib_generic/libgeneric.a(zlib.o)
+                                        0x5c0 (size before relaxing)
+ .debug_str     0x0000000000003e5c        0x8 lib_generic/libgeneric.a(ctype.o)
+                                         0x72 (size before relaxing)
+ .debug_str     0x0000000000003e64       0x69 board/pisces/libpisces.a(pisces.o)
+                                        0x213 (size before relaxing)
+ .debug_str     0x0000000000003ecd       0x58 board/pisces/libpisces.a(flash.o)
+                                        0x1e2 (size before relaxing)
+ .debug_str     0x0000000000003f25      0x11e cpu/mips/libmips.a(jz_serial.o)
+                                        0x1b6 (size before relaxing)
+ .debug_str     0x0000000000004043       0x65 cpu/mips/libmips.a(cpu.o)
+                                        0x1af (size before relaxing)
+ .debug_str     0x00000000000040a8       0x32 cpu/mips/libmips.a(interrupts.o)
+                                        0x100 (size before relaxing)
+ .debug_str     0x00000000000040da       0xe2 cpu/mips/libmips.a(jz4770.o)
+                                        0x30b (size before relaxing)
+ .debug_str     0x00000000000041bc       0xea cpu/mips/libmips.a(jz4770_nand.o)
+                                        0x656 (size before relaxing)
+ .debug_str     0x00000000000042a6      0x163 cpu/mips/libmips.a(jz4770_eth.o)
+                                        0x34a (size before relaxing)
+ .debug_str     0x0000000000004409      0x200 cpu/mips/libmips.a(jz4770_ddr.o)
+                                        0x34c (size before relaxing)
+ .debug_str     0x0000000000004609       0x3a cpu/mips/libmips.a(jz_mddr_init.o)
+                                        0x12a (size before relaxing)
+ .debug_str     0x0000000000004643       0xcc lib_mips/libmips.a(mips_linux.o)
+                                        0x3f8 (size before relaxing)
+ .debug_str     0x000000000000470f      0x1b7 drivers/nand/libnand.a(nand_util.o)
+                                        0x85d (size before relaxing)
+ .debug_str     0x00000000000048c6      0x253 /opt/mipseltools-gcc412-glibc261/lib/gcc/mipsel-linux/4.1.2/libgcc.a(_udivdi3.o)
+                                        0x326 (size before relaxing)
+ .debug_str     0x0000000000000000      0x2b8 /opt/mipseltools-gcc412-glibc261/lib/gcc/mipsel-linux/4.1.2/libgcc.a(_clz.o)
+
+.comment        0x0000000000000000      0x426
+ .comment       0x0000000000000000       0x12 lib_mips/libmips.a(board.o)
+ .comment       0x0000000000000012       0x12 net/libnet.a(net.o)
+ .comment       0x0000000000000024       0x12 net/libnet.a(tftp.o)
+ .comment       0x0000000000000036       0x12 net/libnet.a(bootp.o)
+ .comment       0x0000000000000048       0x12 net/libnet.a(rarp.o)
+ .comment       0x000000000000005a       0x12 net/libnet.a(eth.o)
+ .comment       0x000000000000006c       0x12 net/libnet.a(nfs.o)
+ .comment       0x000000000000007e       0x12 drivers/nand/libnand.a(nand.o)
+ .comment       0x0000000000000090       0x12 drivers/nand/libnand.a(nand_base_jz4770.o)
+ .comment       0x00000000000000a2       0x12 drivers/nand/libnand.a(nand_ids.o)
+ .comment       0x00000000000000b4       0x12 drivers/nand/libnand.a(nand_ecc.o)
+ .comment       0x00000000000000c6       0x12 drivers/nand/libnand.a(nand_bbt.o)
+ .comment       0x00000000000000d8       0x12 common/libcommon.a(main.o)
+ .comment       0x00000000000000ea       0x12 common/libcommon.a(cmd_autoscript.o)
+ .comment       0x00000000000000fc       0x12 common/libcommon.a(cmd_bdinfo.o)
+ .comment       0x000000000000010e       0x12 common/libcommon.a(cmd_boot.o)
+ .comment       0x0000000000000120       0x12 common/libcommon.a(cmd_bootm.o)
+ .comment       0x0000000000000132       0x12 common/libcommon.a(cmd_console.o)
+ .comment       0x0000000000000144       0x12 common/libcommon.a(cmd_flash.o)
+ .comment       0x0000000000000156       0x12 common/libcommon.a(cmd_itest.o)
+ .comment       0x0000000000000168       0x12 common/libcommon.a(cmd_load.o)
+ .comment       0x000000000000017a       0x12 common/libcommon.a(cmd_mem.o)
+ .comment       0x000000000000018c       0x12 common/libcommon.a(cmd_misc.o)
+ .comment       0x000000000000019e       0x12 common/libcommon.a(cmd_msc.o)
+ .comment       0x00000000000001b0       0x12 common/libcommon.a(cmd_nand.o)
+ .comment       0x00000000000001c2       0x12 common/libcommon.a(cmd_net.o)
+ .comment       0x00000000000001d4       0x12 common/libcommon.a(cmd_nvedit.o)
+ .comment       0x00000000000001e6       0x12 common/libcommon.a(command.o)
+ .comment       0x00000000000001f8       0x12 common/libcommon.a(console.o)
+ .comment       0x000000000000020a       0x12 common/libcommon.a(devices.o)
+ .comment       0x000000000000021c       0x12 common/libcommon.a(dlmalloc.o)
+ .comment       0x000000000000022e       0x12 common/libcommon.a(env_common.o)
+ .comment       0x0000000000000240       0x12 common/libcommon.a(env_msc.o)
+ .comment       0x0000000000000252       0x12 common/libcommon.a(exports.o)
+ .comment       0x0000000000000264       0x12 common/libcommon.a(flash.o)
+ .comment       0x0000000000000276       0x12 common/libcommon.a(lists.o)
+ .comment       0x0000000000000288       0x12 common/libcommon.a(s_record.o)
+ .comment       0x000000000000029a       0x12 common/libcommon.a(xyzModem.o)
+ .comment       0x00000000000002ac       0x12 common/libcommon.a(crc16.o)
+ .comment       0x00000000000002be       0x12 lib_generic/libgeneric.a(crc32.o)
+ .comment       0x00000000000002d0       0x12 lib_generic/libgeneric.a(display_options.o)
+ .comment       0x00000000000002e2       0x12 lib_generic/libgeneric.a(string.o)
+ .comment       0x00000000000002f4       0x12 lib_generic/libgeneric.a(vsprintf.o)
+ .comment       0x0000000000000306       0x12 lib_generic/libgeneric.a(zlib.o)
+ .comment       0x0000000000000318       0x12 lib_generic/libgeneric.a(ctype.o)
+ .comment       0x000000000000032a       0x12 board/pisces/libpisces.a(pisces.o)
+ .comment       0x000000000000033c       0x12 board/pisces/libpisces.a(flash.o)
+ .comment       0x000000000000034e       0x12 cpu/mips/libmips.a(jz_serial.o)
+ .comment       0x0000000000000360       0x12 cpu/mips/libmips.a(cpu.o)
+ .comment       0x0000000000000372       0x12 cpu/mips/libmips.a(interrupts.o)
+ .comment       0x0000000000000384       0x12 cpu/mips/libmips.a(jz4770.o)
+ .comment       0x0000000000000396       0x12 cpu/mips/libmips.a(jz4770_nand.o)
+ .comment       0x00000000000003a8       0x12 cpu/mips/libmips.a(jz4770_eth.o)
+ .comment       0x00000000000003ba       0x12 cpu/mips/libmips.a(jz4770_ddr.o)
+ .comment       0x00000000000003cc       0x12 cpu/mips/libmips.a(jz_mddr_init.o)
+ .comment       0x00000000000003de       0x12 lib_mips/libmips.a(mips_linux.o)
+ .comment       0x00000000000003f0       0x12 drivers/nand/libnand.a(nand_util.o)
+ .comment       0x0000000000000402       0x12 /opt/mipseltools-gcc412-glibc261/lib/gcc/mipsel-linux/4.1.2/libgcc.a(_udivdi3.o)
+ .comment       0x0000000000000414       0x12 /opt/mipseltools-gcc412-glibc261/lib/gcc/mipsel-linux/4.1.2/libgcc.a(_clz.o)
+
+.debug_abbrev.5
+                0x0000000000000000      0x44b
+ .debug_abbrev  0x0000000000000000      0x44b net/libnet.a(net.o)
+
+.debug_info.6   0x0000000000000000     0x1a18
+ .debug_info    0x0000000000000000     0x1a18 net/libnet.a(net.o)
+
+.debug_line.7   0x0000000000000000      0x7f3
+ .debug_line    0x0000000000000000      0x7f3 net/libnet.a(net.o)
+
+.debug_aranges.8
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 net/libnet.a(net.o)
+
+.debug_abbrev.9
+                0x0000000000000000      0x229
+ .debug_abbrev  0x0000000000000000      0x229 net/libnet.a(tftp.o)
+
+.debug_info.10  0x0000000000000000      0x625
+ .debug_info    0x0000000000000000      0x625 net/libnet.a(tftp.o)
+
+.debug_line.11  0x0000000000000000      0x366
+ .debug_line    0x0000000000000000      0x366 net/libnet.a(tftp.o)
+
+.debug_aranges.12
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 net/libnet.a(tftp.o)
+
+.debug_abbrev.13
+                0x0000000000000000      0x362
+ .debug_abbrev  0x0000000000000000      0x362 net/libnet.a(bootp.o)
+
+.debug_info.14  0x0000000000000000      0xc3b
+ .debug_info    0x0000000000000000      0xc3b net/libnet.a(bootp.o)
+
+.debug_line.15  0x0000000000000000      0x474
+ .debug_line    0x0000000000000000      0x474 net/libnet.a(bootp.o)
+
+.debug_aranges.16
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 net/libnet.a(bootp.o)
+
+.debug_abbrev.17
+                0x0000000000000000      0x16d
+ .debug_abbrev  0x0000000000000000      0x16d net/libnet.a(rarp.o)
+
+.debug_info.18  0x0000000000000000      0x2d7
+ .debug_info    0x0000000000000000      0x2d7 net/libnet.a(rarp.o)
+
+.debug_line.19  0x0000000000000000      0x161
+ .debug_line    0x0000000000000000      0x161 net/libnet.a(rarp.o)
+
+.debug_aranges.20
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 net/libnet.a(rarp.o)
+
+.debug_abbrev.21
+                0x0000000000000000      0x2f2
+ .debug_abbrev  0x0000000000000000      0x2f2 net/libnet.a(eth.o)
+
+.debug_info.22  0x0000000000000000      0x7c7
+ .debug_info    0x0000000000000000      0x7c7 net/libnet.a(eth.o)
+
+.debug_line.23  0x0000000000000000      0x242
+ .debug_line    0x0000000000000000      0x242 net/libnet.a(eth.o)
+
+.debug_aranges.24
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 net/libnet.a(eth.o)
+
+.debug_abbrev.25
+                0x0000000000000000      0x37b
+ .debug_abbrev  0x0000000000000000      0x37b net/libnet.a(nfs.o)
+
+.debug_info.26  0x0000000000000000      0xdab
+ .debug_info    0x0000000000000000      0xdab net/libnet.a(nfs.o)
+
+.debug_line.27  0x0000000000000000      0x4e3
+ .debug_line    0x0000000000000000      0x4e3 net/libnet.a(nfs.o)
+
+.debug_aranges.28
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 net/libnet.a(nfs.o)
+
+.debug_abbrev.29
+                0x0000000000000000      0x1a5
+ .debug_abbrev  0x0000000000000000      0x1a5 drivers/nand/libnand.a(nand.o)
+
+.debug_info.30  0x0000000000000000      0xc89
+ .debug_info    0x0000000000000000      0xc89 drivers/nand/libnand.a(nand.o)
+
+.debug_line.31  0x0000000000000000      0x192
+ .debug_line    0x0000000000000000      0x192 drivers/nand/libnand.a(nand.o)
+
+.debug_aranges.32
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 drivers/nand/libnand.a(nand.o)
+
+.debug_abbrev.33
+                0x0000000000000000      0x43a
+ .debug_abbrev  0x0000000000000000      0x43a drivers/nand/libnand.a(nand_base_jz4770.o)
+
+.debug_info.34  0x0000000000000000     0x28ff
+ .debug_info    0x0000000000000000     0x28ff drivers/nand/libnand.a(nand_base_jz4770.o)
+
+.debug_line.35  0x0000000000000000      0xc08
+ .debug_line    0x0000000000000000      0xc08 drivers/nand/libnand.a(nand_base_jz4770.o)
+
+.debug_aranges.36
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 drivers/nand/libnand.a(nand_base_jz4770.o)
+
+.debug_abbrev.37
+                0x0000000000000000       0xaa
+ .debug_abbrev  0x0000000000000000       0xaa drivers/nand/libnand.a(nand_ids.o)
+
+.debug_info.38  0x0000000000000000      0x277
+ .debug_info    0x0000000000000000      0x277 drivers/nand/libnand.a(nand_ids.o)
+
+.debug_line.39  0x0000000000000000      0x10e
+ .debug_line    0x0000000000000000      0x10e drivers/nand/libnand.a(nand_ids.o)
+
+.debug_aranges.40
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 drivers/nand/libnand.a(nand_ids.o)
+
+.debug_abbrev.41
+                0x0000000000000000      0x1be
+ .debug_abbrev  0x0000000000000000      0x1be drivers/nand/libnand.a(nand_ecc.o)
+
+.debug_info.42  0x0000000000000000      0x846
+ .debug_info    0x0000000000000000      0x846 drivers/nand/libnand.a(nand_ecc.o)
+
+.debug_line.43  0x0000000000000000      0x1be
+ .debug_line    0x0000000000000000      0x1be drivers/nand/libnand.a(nand_ecc.o)
+
+.debug_aranges.44
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 drivers/nand/libnand.a(nand_ecc.o)
+
+.debug_abbrev.45
+                0x0000000000000000      0x36c
+ .debug_abbrev  0x0000000000000000      0x36c drivers/nand/libnand.a(nand_bbt.o)
+
+.debug_info.46  0x0000000000000000     0x187b
+ .debug_info    0x0000000000000000     0x187b drivers/nand/libnand.a(nand_bbt.o)
+
+.debug_line.47  0x0000000000000000      0x5b9
+ .debug_line    0x0000000000000000      0x5b9 drivers/nand/libnand.a(nand_bbt.o)
+
+.debug_aranges.48
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 drivers/nand/libnand.a(nand_bbt.o)
+
+.debug_abbrev.49
+                0x0000000000000000      0x26c
+ .debug_abbrev  0x0000000000000000      0x26c common/libcommon.a(main.o)
+
+.debug_info.50  0x0000000000000000      0x70f
+ .debug_info    0x0000000000000000      0x70f common/libcommon.a(main.o)
+
+.debug_line.51  0x0000000000000000      0x358
+ .debug_line    0x0000000000000000      0x358 common/libcommon.a(main.o)
+
+.debug_aranges.52
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(main.o)
+
+.debug_abbrev.53
+                0x0000000000000000      0x157
+ .debug_abbrev  0x0000000000000000      0x157 common/libcommon.a(cmd_autoscript.o)
+
+.debug_info.54  0x0000000000000000      0x3df
+ .debug_info    0x0000000000000000      0x3df common/libcommon.a(cmd_autoscript.o)
+
+.debug_line.55  0x0000000000000000      0x1ea
+ .debug_line    0x0000000000000000      0x1ea common/libcommon.a(cmd_autoscript.o)
+
+.debug_aranges.56
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(cmd_autoscript.o)
+
+.debug_abbrev.57
+                0x0000000000000000      0x11a
+ .debug_abbrev  0x0000000000000000      0x11a common/libcommon.a(cmd_bdinfo.o)
+
+.debug_info.58  0x0000000000000000      0x3c0
+ .debug_info    0x0000000000000000      0x3c0 common/libcommon.a(cmd_bdinfo.o)
+
+.debug_line.59  0x0000000000000000      0x147
+ .debug_line    0x0000000000000000      0x147 common/libcommon.a(cmd_bdinfo.o)
+
+.debug_aranges.60
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(cmd_bdinfo.o)
+
+.debug_abbrev.61
+                0x0000000000000000       0xd9
+ .debug_abbrev  0x0000000000000000       0xd9 common/libcommon.a(cmd_boot.o)
+
+.debug_info.62  0x0000000000000000      0x1dc
+ .debug_info    0x0000000000000000      0x1dc common/libcommon.a(cmd_boot.o)
+
+.debug_line.63  0x0000000000000000       0xee
+ .debug_line    0x0000000000000000       0xee common/libcommon.a(cmd_boot.o)
+
+.debug_aranges.64
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(cmd_boot.o)
+
+.debug_abbrev.65
+                0x0000000000000000      0x35e
+ .debug_abbrev  0x0000000000000000      0x35e common/libcommon.a(cmd_bootm.o)
+
+.debug_info.66  0x0000000000000000      0xfff
+ .debug_info    0x0000000000000000      0xfff common/libcommon.a(cmd_bootm.o)
+
+.debug_line.67  0x0000000000000000      0x474
+ .debug_line    0x0000000000000000      0x474 common/libcommon.a(cmd_bootm.o)
+
+.debug_aranges.68
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(cmd_bootm.o)
+
+.debug_abbrev.69
+                0x0000000000000000      0x146
+ .debug_abbrev  0x0000000000000000      0x146 common/libcommon.a(cmd_console.o)
+
+.debug_info.70  0x0000000000000000      0x384
+ .debug_info    0x0000000000000000      0x384 common/libcommon.a(cmd_console.o)
+
+.debug_line.71  0x0000000000000000       0xb6
+ .debug_line    0x0000000000000000       0xb6 common/libcommon.a(cmd_console.o)
+
+.debug_aranges.72
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(cmd_console.o)
+
+.debug_abbrev.73
+                0x0000000000000000      0x21d
+ .debug_abbrev  0x0000000000000000      0x21d common/libcommon.a(cmd_flash.o)
+
+.debug_info.74  0x0000000000000000      0x9c3
+ .debug_info    0x0000000000000000      0x9c3 common/libcommon.a(cmd_flash.o)
+
+.debug_line.75  0x0000000000000000      0x3a5
+ .debug_line    0x0000000000000000      0x3a5 common/libcommon.a(cmd_flash.o)
+
+.debug_aranges.76
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(cmd_flash.o)
+
+.debug_abbrev.77
+                0x0000000000000000      0x212
+ .debug_abbrev  0x0000000000000000      0x212 common/libcommon.a(cmd_itest.o)
+
+.debug_info.78  0x0000000000000000      0x526
+ .debug_info    0x0000000000000000      0x526 common/libcommon.a(cmd_itest.o)
+
+.debug_line.79  0x0000000000000000      0x1b7
+ .debug_line    0x0000000000000000      0x1b7 common/libcommon.a(cmd_itest.o)
+
+.debug_aranges.80
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(cmd_itest.o)
+
+.debug_abbrev.81
+                0x0000000000000000      0x3e9
+ .debug_abbrev  0x0000000000000000      0x3e9 common/libcommon.a(cmd_load.o)
+
+.debug_info.82  0x0000000000000000      0xe33
+ .debug_info    0x0000000000000000      0xe33 common/libcommon.a(cmd_load.o)
+
+.debug_line.83  0x0000000000000000      0x4c9
+ .debug_line    0x0000000000000000      0x4c9 common/libcommon.a(cmd_load.o)
+
+.debug_aranges.84
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(cmd_load.o)
+
+.debug_abbrev.85
+                0x0000000000000000      0x294
+ .debug_abbrev  0x0000000000000000      0x294 common/libcommon.a(cmd_mem.o)
+
+.debug_info.86  0x0000000000000000      0xd4d
+ .debug_info    0x0000000000000000      0xd4d common/libcommon.a(cmd_mem.o)
+
+.debug_line.87  0x0000000000000000      0x3e1
+ .debug_line    0x0000000000000000      0x3e1 common/libcommon.a(cmd_mem.o)
+
+.debug_aranges.88
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(cmd_mem.o)
+
+.debug_abbrev.89
+                0x0000000000000000       0xca
+ .debug_abbrev  0x0000000000000000       0xca common/libcommon.a(cmd_misc.o)
+
+.debug_info.90  0x0000000000000000      0x1bc
+ .debug_info    0x0000000000000000      0x1bc common/libcommon.a(cmd_misc.o)
+
+.debug_line.91  0x0000000000000000       0xe3
+ .debug_line    0x0000000000000000       0xe3 common/libcommon.a(cmd_misc.o)
+
+.debug_aranges.92
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(cmd_misc.o)
+
+.debug_abbrev.93
+                0x0000000000000000      0x2ff
+ .debug_abbrev  0x0000000000000000      0x2ff common/libcommon.a(cmd_msc.o)
+
+.debug_info.94  0x0000000000000000      0x9e7
+ .debug_info    0x0000000000000000      0x9e7 common/libcommon.a(cmd_msc.o)
+
+.debug_line.95  0x0000000000000000      0x432
+ .debug_line    0x0000000000000000      0x432 common/libcommon.a(cmd_msc.o)
+
+.debug_aranges.96
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(cmd_msc.o)
+
+.debug_abbrev.97
+                0x0000000000000000      0x363
+ .debug_abbrev  0x0000000000000000      0x363 common/libcommon.a(cmd_nand.o)
+
+.debug_info.98  0x0000000000000000     0x1f8c
+ .debug_info    0x0000000000000000     0x1f8c common/libcommon.a(cmd_nand.o)
+
+.debug_line.99  0x0000000000000000      0x72a
+ .debug_line    0x0000000000000000      0x72a common/libcommon.a(cmd_nand.o)
+
+.debug_aranges.100
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(cmd_nand.o)
+
+.debug_abbrev.101
+                0x0000000000000000      0x22d
+ .debug_abbrev  0x0000000000000000      0x22d common/libcommon.a(cmd_net.o)
+
+.debug_info.102
+                0x0000000000000000      0x659
+ .debug_info    0x0000000000000000      0x659 common/libcommon.a(cmd_net.o)
+
+.debug_line.103
+                0x0000000000000000      0x1f2
+ .debug_line    0x0000000000000000      0x1f2 common/libcommon.a(cmd_net.o)
+
+.debug_aranges.104
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(cmd_net.o)
+
+.debug_abbrev.105
+                0x0000000000000000      0x2bd
+ .debug_abbrev  0x0000000000000000      0x2bd common/libcommon.a(cmd_nvedit.o)
+
+.debug_info.106
+                0x0000000000000000      0xcd8
+ .debug_info    0x0000000000000000      0xcd8 common/libcommon.a(cmd_nvedit.o)
+
+.debug_line.107
+                0x0000000000000000      0x441
+ .debug_line    0x0000000000000000      0x441 common/libcommon.a(cmd_nvedit.o)
+
+.debug_aranges.108
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(cmd_nvedit.o)
+
+.debug_abbrev.109
+                0x0000000000000000      0x1f6
+ .debug_abbrev  0x0000000000000000      0x1f6 common/libcommon.a(command.o)
+
+.debug_info.110
+                0x0000000000000000      0x526
+ .debug_info    0x0000000000000000      0x526 common/libcommon.a(command.o)
+
+.debug_line.111
+                0x0000000000000000      0x1f2
+ .debug_line    0x0000000000000000      0x1f2 common/libcommon.a(command.o)
+
+.debug_aranges.112
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(command.o)
+
+.debug_abbrev.113
+                0x0000000000000000      0x316
+ .debug_abbrev  0x0000000000000000      0x316 common/libcommon.a(console.o)
+
+.debug_info.114
+                0x0000000000000000      0x98e
+ .debug_info    0x0000000000000000      0x98e common/libcommon.a(console.o)
+
+.debug_line.115
+                0x0000000000000000      0x2e3
+ .debug_line    0x0000000000000000      0x2e3 common/libcommon.a(console.o)
+
+.debug_aranges.116
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(console.o)
+
+.debug_abbrev.117
+                0x0000000000000000      0x1d2
+ .debug_abbrev  0x0000000000000000      0x1d2 common/libcommon.a(devices.o)
+
+.debug_info.118
+                0x0000000000000000      0x555
+ .debug_info    0x0000000000000000      0x555 common/libcommon.a(devices.o)
+
+.debug_line.119
+                0x0000000000000000      0x17e
+ .debug_line    0x0000000000000000      0x17e common/libcommon.a(devices.o)
+
+.debug_aranges.120
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(devices.o)
+
+.debug_abbrev.121
+                0x0000000000000000      0x23f
+ .debug_abbrev  0x0000000000000000      0x23f common/libcommon.a(dlmalloc.o)
+
+.debug_info.122
+                0x0000000000000000      0xc73
+ .debug_info    0x0000000000000000      0xc73 common/libcommon.a(dlmalloc.o)
+
+.debug_line.123
+                0x0000000000000000      0x4a0
+ .debug_line    0x0000000000000000      0x4a0 common/libcommon.a(dlmalloc.o)
+
+.debug_aranges.124
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(dlmalloc.o)
+
+.debug_abbrev.125
+                0x0000000000000000      0x176
+ .debug_abbrev  0x0000000000000000      0x176 common/libcommon.a(env_common.o)
+
+.debug_info.126
+                0x0000000000000000      0x3d5
+ .debug_info    0x0000000000000000      0x3d5 common/libcommon.a(env_common.o)
+
+.debug_line.127
+                0x0000000000000000      0x134
+ .debug_line    0x0000000000000000      0x134 common/libcommon.a(env_common.o)
+
+.debug_aranges.128
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(env_common.o)
+
+.debug_abbrev.129
+                0x0000000000000000      0x185
+ .debug_abbrev  0x0000000000000000      0x185 common/libcommon.a(env_msc.o)
+
+.debug_info.130
+                0x0000000000000000      0x3bd
+ .debug_info    0x0000000000000000      0x3bd common/libcommon.a(env_msc.o)
+
+.debug_line.131
+                0x0000000000000000      0x171
+ .debug_line    0x0000000000000000      0x171 common/libcommon.a(env_msc.o)
+
+.debug_aranges.132
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(env_msc.o)
+
+.debug_abbrev.133
+                0x0000000000000000       0xf5
+ .debug_abbrev  0x0000000000000000       0xf5 common/libcommon.a(exports.o)
+
+.debug_info.134
+                0x0000000000000000      0x294
+ .debug_info    0x0000000000000000      0x294 common/libcommon.a(exports.o)
+
+.debug_line.135
+                0x0000000000000000       0xae
+ .debug_line    0x0000000000000000       0xae common/libcommon.a(exports.o)
+
+.debug_aranges.136
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(exports.o)
+
+.debug_abbrev.137
+                0x0000000000000000      0x17c
+ .debug_abbrev  0x0000000000000000      0x17c common/libcommon.a(flash.o)
+
+.debug_info.138
+                0x0000000000000000      0x30d
+ .debug_info    0x0000000000000000      0x30d common/libcommon.a(flash.o)
+
+.debug_line.139
+                0x0000000000000000      0x161
+ .debug_line    0x0000000000000000      0x161 common/libcommon.a(flash.o)
+
+.debug_aranges.140
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(flash.o)
+
+.debug_abbrev.141
+                0x0000000000000000      0x20f
+ .debug_abbrev  0x0000000000000000      0x20f common/libcommon.a(lists.o)
+
+.debug_info.142
+                0x0000000000000000      0x554
+ .debug_info    0x0000000000000000      0x554 common/libcommon.a(lists.o)
+
+.debug_line.143
+                0x0000000000000000      0x159
+ .debug_line    0x0000000000000000      0x159 common/libcommon.a(lists.o)
+
+.debug_aranges.144
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(lists.o)
+
+.debug_abbrev.145
+                0x0000000000000000       0xdb
+ .debug_abbrev  0x0000000000000000       0xdb common/libcommon.a(s_record.o)
+
+.debug_info.146
+                0x0000000000000000      0x19f
+ .debug_info    0x0000000000000000      0x19f common/libcommon.a(s_record.o)
+
+.debug_line.147
+                0x0000000000000000      0x11b
+ .debug_line    0x0000000000000000      0x11b common/libcommon.a(s_record.o)
+
+.debug_aranges.148
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(s_record.o)
+
+.debug_abbrev.149
+                0x0000000000000000      0x2c0
+ .debug_abbrev  0x0000000000000000      0x2c0 common/libcommon.a(xyzModem.o)
+
+.debug_info.150
+                0x0000000000000000      0x69b
+ .debug_info    0x0000000000000000      0x69b common/libcommon.a(xyzModem.o)
+
+.debug_line.151
+                0x0000000000000000      0x30f
+ .debug_line    0x0000000000000000      0x30f common/libcommon.a(xyzModem.o)
+
+.debug_aranges.152
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(xyzModem.o)
+
+.debug_abbrev.153
+                0x0000000000000000       0xb1
+ .debug_abbrev  0x0000000000000000       0xb1 common/libcommon.a(crc16.o)
+
+.debug_info.154
+                0x0000000000000000      0x110
+ .debug_info    0x0000000000000000      0x110 common/libcommon.a(crc16.o)
+
+.debug_line.155
+                0x0000000000000000       0xcb
+ .debug_line    0x0000000000000000       0xcb common/libcommon.a(crc16.o)
+
+.debug_aranges.156
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 common/libcommon.a(crc16.o)
+
+.debug_abbrev.157
+                0x0000000000000000       0xa2
+ .debug_abbrev  0x0000000000000000       0xa2 lib_generic/libgeneric.a(crc32.o)
+
+.debug_info.158
+                0x0000000000000000      0x183
+ .debug_info    0x0000000000000000      0x183 lib_generic/libgeneric.a(crc32.o)
+
+.debug_line.159
+                0x0000000000000000       0xe8
+ .debug_line    0x0000000000000000       0xe8 lib_generic/libgeneric.a(crc32.o)
+
+.debug_aranges.160
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 lib_generic/libgeneric.a(crc32.o)
+
+.debug_abbrev.161
+                0x0000000000000000       0xcf
+ .debug_abbrev  0x0000000000000000       0xcf lib_generic/libgeneric.a(display_options.o)
+
+.debug_info.162
+                0x0000000000000000      0x12a
+ .debug_info    0x0000000000000000      0x12a lib_generic/libgeneric.a(display_options.o)
+
+.debug_line.163
+                0x0000000000000000       0xab
+ .debug_line    0x0000000000000000       0xab lib_generic/libgeneric.a(display_options.o)
+
+.debug_aranges.164
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 lib_generic/libgeneric.a(display_options.o)
+
+.debug_abbrev.165
+                0x0000000000000000      0x227
+ .debug_abbrev  0x0000000000000000      0x227 lib_generic/libgeneric.a(string.o)
+
+.debug_info.166
+                0x0000000000000000      0x743
+ .debug_info    0x0000000000000000      0x743 lib_generic/libgeneric.a(string.o)
+
+.debug_line.167
+                0x0000000000000000      0x1d5
+ .debug_line    0x0000000000000000      0x1d5 lib_generic/libgeneric.a(string.o)
+
+.debug_aranges.168
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 lib_generic/libgeneric.a(string.o)
+
+.debug_abbrev.169
+                0x0000000000000000      0x211
+ .debug_abbrev  0x0000000000000000      0x211 lib_generic/libgeneric.a(vsprintf.o)
+
+.debug_info.170
+                0x0000000000000000      0x45b
+ .debug_info    0x0000000000000000      0x45b lib_generic/libgeneric.a(vsprintf.o)
+
+.debug_line.171
+                0x0000000000000000      0x268
+ .debug_line    0x0000000000000000      0x268 lib_generic/libgeneric.a(vsprintf.o)
+
+.debug_aranges.172
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 lib_generic/libgeneric.a(vsprintf.o)
+
+.debug_abbrev.173
+                0x0000000000000000      0x301
+ .debug_abbrev  0x0000000000000000      0x301 lib_generic/libgeneric.a(zlib.o)
+
+.debug_info.174
+                0x0000000000000000     0x17b3
+ .debug_info    0x0000000000000000     0x17b3 lib_generic/libgeneric.a(zlib.o)
+
+.debug_line.175
+                0x0000000000000000      0x826
+ .debug_line    0x0000000000000000      0x826 lib_generic/libgeneric.a(zlib.o)
+
+.debug_aranges.176
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 lib_generic/libgeneric.a(zlib.o)
+
+.debug_abbrev.177
+                0x0000000000000000       0x42
+ .debug_abbrev  0x0000000000000000       0x42 lib_generic/libgeneric.a(ctype.o)
+
+.debug_info.178
+                0x0000000000000000       0x56
+ .debug_info    0x0000000000000000       0x56 lib_generic/libgeneric.a(ctype.o)
+
+.debug_line.179
+                0x0000000000000000       0x28
+ .debug_line    0x0000000000000000       0x28 lib_generic/libgeneric.a(ctype.o)
+
+.debug_abbrev.180
+                0x0000000000000000       0xf0
+ .debug_abbrev  0x0000000000000000       0xf0 board/pisces/libpisces.a(pisces.o)
+
+.debug_info.181
+                0x0000000000000000      0x291
+ .debug_info    0x0000000000000000      0x291 board/pisces/libpisces.a(pisces.o)
+
+.debug_line.182
+                0x0000000000000000       0xc4
+ .debug_line    0x0000000000000000       0xc4 board/pisces/libpisces.a(pisces.o)
+
+.debug_aranges.183
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 board/pisces/libpisces.a(pisces.o)
+
+.debug_abbrev.184
+                0x0000000000000000      0x22f
+ .debug_abbrev  0x0000000000000000      0x22f board/pisces/libpisces.a(flash.o)
+
+.debug_info.185
+                0x0000000000000000      0x47f
+ .debug_info    0x0000000000000000      0x47f board/pisces/libpisces.a(flash.o)
+
+.debug_line.186
+                0x0000000000000000      0x22b
+ .debug_line    0x0000000000000000      0x22b board/pisces/libpisces.a(flash.o)
+
+.debug_aranges.187
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 board/pisces/libpisces.a(flash.o)
+
+.debug_abbrev.188
+                0x0000000000000000      0x14f
+ .debug_abbrev  0x0000000000000000      0x14f cpu/mips/libmips.a(jz_serial.o)
+
+.debug_info.189
+                0x0000000000000000      0x2d3
+ .debug_info    0x0000000000000000      0x2d3 cpu/mips/libmips.a(jz_serial.o)
+
+.debug_line.190
+                0x0000000000000000      0x119
+ .debug_line    0x0000000000000000      0x119 cpu/mips/libmips.a(jz_serial.o)
+
+.debug_aranges.191
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 cpu/mips/libmips.a(jz_serial.o)
+
+.debug_abbrev.192
+                0x0000000000000000      0x148
+ .debug_abbrev  0x0000000000000000      0x148 cpu/mips/libmips.a(cpu.o)
+
+.debug_info.193
+                0x0000000000000000      0x2cd
+ .debug_info    0x0000000000000000      0x2cd cpu/mips/libmips.a(cpu.o)
+
+.debug_line.194
+                0x0000000000000000      0x139
+ .debug_line    0x0000000000000000      0x139 cpu/mips/libmips.a(cpu.o)
+
+.debug_aranges.195
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 cpu/mips/libmips.a(cpu.o)
+
+.debug_abbrev.196
+                0x0000000000000000       0x5c
+ .debug_abbrev  0x0000000000000000       0x5c cpu/mips/libmips.a(interrupts.o)
+
+.debug_info.197
+                0x0000000000000000       0xac
+ .debug_info    0x0000000000000000       0xac cpu/mips/libmips.a(interrupts.o)
+
+.debug_line.198
+                0x0000000000000000       0x3d
+ .debug_line    0x0000000000000000       0x3d cpu/mips/libmips.a(interrupts.o)
+
+.debug_aranges.199
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 cpu/mips/libmips.a(interrupts.o)
+
+.debug_abbrev.200
+                0x0000000000000000      0x2d7
+ .debug_abbrev  0x0000000000000000      0x2d7 cpu/mips/libmips.a(jz4770.o)
+
+.debug_info.201
+                0x0000000000000000      0x66b
+ .debug_info    0x0000000000000000      0x66b cpu/mips/libmips.a(jz4770.o)
+
+.debug_line.202
+                0x0000000000000000      0x206
+ .debug_line    0x0000000000000000      0x206 cpu/mips/libmips.a(jz4770.o)
+
+.debug_aranges.203
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 cpu/mips/libmips.a(jz4770.o)
+
+.debug_abbrev.204
+                0x0000000000000000      0x241
+ .debug_abbrev  0x0000000000000000      0x241 cpu/mips/libmips.a(jz4770_nand.o)
+
+.debug_info.205
+                0x0000000000000000      0xe40
+ .debug_info    0x0000000000000000      0xe40 cpu/mips/libmips.a(jz4770_nand.o)
+
+.debug_line.206
+                0x0000000000000000      0x23a
+ .debug_line    0x0000000000000000      0x23a cpu/mips/libmips.a(jz4770_nand.o)
+
+.debug_aranges.207
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 cpu/mips/libmips.a(jz4770_nand.o)
+
+.debug_abbrev.208
+                0x0000000000000000      0x295
+ .debug_abbrev  0x0000000000000000      0x295 cpu/mips/libmips.a(jz4770_eth.o)
+
+.debug_info.209
+                0x0000000000000000      0x86a
+ .debug_info    0x0000000000000000      0x86a cpu/mips/libmips.a(jz4770_eth.o)
+
+.debug_line.210
+                0x0000000000000000      0x370
+ .debug_line    0x0000000000000000      0x370 cpu/mips/libmips.a(jz4770_eth.o)
+
+.debug_aranges.211
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 cpu/mips/libmips.a(jz4770_eth.o)
+
+.debug_abbrev.212
+                0x0000000000000000      0x268
+ .debug_abbrev  0x0000000000000000      0x268 cpu/mips/libmips.a(jz4770_ddr.o)
+
+.debug_info.213
+                0x0000000000000000      0x7d6
+ .debug_info    0x0000000000000000      0x7d6 cpu/mips/libmips.a(jz4770_ddr.o)
+
+.debug_line.214
+                0x0000000000000000      0x30e
+ .debug_line    0x0000000000000000      0x30e cpu/mips/libmips.a(jz4770_ddr.o)
+
+.debug_aranges.215
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 cpu/mips/libmips.a(jz4770_ddr.o)
+
+.debug_abbrev.216
+                0x0000000000000000       0x85
+ .debug_abbrev  0x0000000000000000       0x85 cpu/mips/libmips.a(jz_mddr_init.o)
+
+.debug_info.217
+                0x0000000000000000      0x112
+ .debug_info    0x0000000000000000      0x112 cpu/mips/libmips.a(jz_mddr_init.o)
+
+.debug_line.218
+                0x0000000000000000       0x70
+ .debug_line    0x0000000000000000       0x70 cpu/mips/libmips.a(jz_mddr_init.o)
+
+.debug_aranges.219
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 cpu/mips/libmips.a(jz_mddr_init.o)
+
+.debug_abbrev.220
+                0x0000000000000000      0x259
+ .debug_abbrev  0x0000000000000000      0x259 lib_mips/libmips.a(mips_linux.o)
+
+.debug_info.221
+                0x0000000000000000      0x7c9
+ .debug_info    0x0000000000000000      0x7c9 lib_mips/libmips.a(mips_linux.o)
+
+.debug_line.222
+                0x0000000000000000      0x2f4
+ .debug_line    0x0000000000000000      0x2f4 lib_mips/libmips.a(mips_linux.o)
+
+.debug_aranges.223
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 lib_mips/libmips.a(mips_linux.o)
+
+.debug_abbrev.224
+                0x0000000000000000      0x243
+ .debug_abbrev  0x0000000000000000      0x243 drivers/nand/libnand.a(nand_util.o)
+
+.debug_info.225
+                0x0000000000000000     0x13e9
+ .debug_info    0x0000000000000000     0x13e9 drivers/nand/libnand.a(nand_util.o)
+
+.debug_line.226
+                0x0000000000000000      0x502
+ .debug_line    0x0000000000000000      0x502 drivers/nand/libnand.a(nand_util.o)
+
+.debug_aranges.227
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 drivers/nand/libnand.a(nand_util.o)
+
+.debug_abbrev.228
+                0x0000000000000000      0x19e
+ .debug_abbrev  0x0000000000000000      0x19e /opt/mipseltools-gcc412-glibc261/lib/gcc/mipsel-linux/4.1.2/libgcc.a(_udivdi3.o)
+
+.debug_info.229
+                0x0000000000000000      0x8e0
+ .debug_info    0x0000000000000000      0x8e0 /opt/mipseltools-gcc412-glibc261/lib/gcc/mipsel-linux/4.1.2/libgcc.a(_udivdi3.o)
+
+.debug_line.230
+                0x0000000000000000      0x1f5
+ .debug_line    0x0000000000000000      0x1f5 /opt/mipseltools-gcc412-glibc261/lib/gcc/mipsel-linux/4.1.2/libgcc.a(_udivdi3.o)
+
+.debug_aranges.231
+                0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 /opt/mipseltools-gcc412-glibc261/lib/gcc/mipsel-linux/4.1.2/libgcc.a(_udivdi3.o)
+
+.debug_abbrev.232
+                0x0000000000000000       0xba
+ .debug_abbrev  0x0000000000000000       0xba /opt/mipseltools-gcc412-glibc261/lib/gcc/mipsel-linux/4.1.2/libgcc.a(_clz.o)
+
+.debug_info.233
+                0x0000000000000000      0x347
+ .debug_info    0x0000000000000000      0x347 /opt/mipseltools-gcc412-glibc261/lib/gcc/mipsel-linux/4.1.2/libgcc.a(_clz.o)
+
+.debug_line.234
+                0x0000000000000000      0x12b
+ .debug_line    0x0000000000000000      0x12b /opt/mipseltools-gcc412-glibc261/lib/gcc/mipsel-linux/4.1.2/libgcc.a(_clz.o)

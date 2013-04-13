@@ -1,0 +1,1 @@
+/home/jacky/jackys_house/H350_prj/uboot_h350/cpu/mips/jz_mddr_init.c

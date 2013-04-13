@@ -685,6 +685,179 @@ int do_mem_loopw (cmd_tbl_t *cmdtp, int flag, int argc, char *argv[])
 }
 #endif /* CONFIG_LOOPW */
 
+static unsigned int status = 0;
+static void set_mips_regs(void)/*must called before mem test*/
+{
+	register unsigned int tmp = 0;
+
+	__asm__ __volatile__ (
+		".set\tmips32\n\t"                             
+		"mfc0 %0, $12, 0\n\t"
+		"nop\n\t"
+		".set\tmips0\n\t"                             
+		:"=r"(tmp));
+
+	printf("CP0 Status register = %x\n", tmp);
+	status = 0;
+	tmp &= ~0x4;
+	tmp |= 0x2;
+
+	__asm__ __volatile__(
+		".set\tmips32\n\t"                             
+		"mtc0 %0, $12, 0\n\t"
+		"nop\n\t"
+		".set\tmips0\n\t"                             
+		::"r"(tmp));
+
+	tmp = 0xa9000000;
+
+	__asm__ __volatile__ (
+		".set\tmips32\n\t"                             
+		"mtc0 %0, $5, 4\n\t"
+		"nop\n\t"
+		".set\tmips0\n\t"                             
+		::"r"(tmp)
+		);
+	
+}
+
+#define __read_32bit_c0_register(source, sel)                           \
+	({ int __res;							\
+		if (sel == 0)						\
+			__asm__ __volatile__(				\
+				"mfc0\t%0, " #source "\n\t"		\
+				"nop \n\t"				\
+				: "=r" (__res));			\
+		else							\
+			__asm__ __volatile__(				\
+				".set\tmips32\n\t"			\
+				"mfc0\t%0, " #source ", " #sel "\n\t"	\
+				"nop \n\t"				\
+				".set\tmips0\n\t"			\
+				: "=r" (__res));			\
+		__res;							\
+	})
+
+#define __write_32bit_c0_register(register, sel, value)                 \
+	do {								\
+		if (sel == 0)						\
+			__asm__ __volatile__(				\
+				"mtc0\t%z0, " #register "\n\t"		\
+				"nop \n\t"				\
+				: : "Jr" ((unsigned int)(value)));	\
+		else							\
+			__asm__ __volatile__(				\
+				".set\tmips32\n\t"			\
+				"mtc0\t%z0, " #register ", " #sel "\n\t" \
+				"nop \n\t"				\
+				".set\tmips0"				\
+				: : "Jr" ((unsigned int)(value)));	\
+	} while (0)
+
+#define read_c0_index()         __read_32bit_c0_register($0, 0)
+#define write_c0_index(val)     __write_32bit_c0_register($0, 0, val)
+
+#define read_c0_entrylo0()      __read_32bit_c0_register($2, 0)
+#define write_c0_entrylo0(val)  __write_32bit_c0_register($2, 0, val)
+
+#define read_c0_entrylo1()      __read_32bit_c0_register($3, 0)
+#define write_c0_entrylo1(val)  __write_32bit_c0_register($3, 0, val)
+
+#define read_c0_context()       __read_32bit_c0_register($4, 0)
+#define write_c0_context(val)   __write_32bit_c0_register($4, 0, val)
+
+#define read_c0_userlocal()     __read_32bit_c0_register($4, 2)
+#define write_c0_userlocal(val) __write_32bit_c0_register($4, 2, val)
+
+#define read_c0_pagemask()      __read_32bit_c0_register($5, 0)
+#define write_c0_pagemask(val)  __write_32bit_c0_register($5, 0, val)
+
+#define read_c0_entryhi()       __read_32bit_c0_register($10, 0)
+#define write_c0_entryhi(val)   __write_32bit_c0_register($10, 0, val)
+
+void mmu_dump_tlb(void)
+{
+	int i;
+	printf("Dump MMU tlb entries:\n");
+	printf("index  mask    entryhi  entrylo0 entrylo1\n");
+	for (i = 0; i < 32; i++) {
+		write_c0_index(i);
+		__asm__ __volatile__("nop;nop;nop;nop;");
+		__asm__ __volatile__("tlbr");
+		__asm__ __volatile__("nop;nop;nop;nop;");
+
+		printf(" %2d   %x %x      %x      %x\n",i,
+			 read_c0_pagemask(),
+			 read_c0_entryhi(),
+			 read_c0_entrylo0(),
+			 read_c0_entrylo1());
+	}
+}
+
+static void flush_tlb_entry(void)
+{
+	int i;
+	static int tlb_entry_num;
+	unsigned long config;
+
+	config = __read_32bit_c0_register($16, 1);
+	tlb_entry_num = (config >> 25) % 64 + 1;
+
+	/* flush TLB */
+	for (i = 0; i < tlb_entry_num; i++) {
+		write_c0_index(i);
+		write_c0_pagemask(0);
+		write_c0_entryhi(i << 13);
+		write_c0_entrylo0((2) << 6 | 0x0);
+		write_c0_entrylo1((3) << 6 | 0x1f);
+		/* barrier */
+		__asm__ __volatile__("nop;nop;nop;nop;");
+		/* write indexed tlb entry */
+		__asm__ __volatile__("tlbwi");
+	}
+}
+
+int map_mem_tlb(unsigned long vaddr, unsigned long paddr,
+		unsigned page_size, unsigned mem_size)
+{       
+	unsigned int page_mask;
+	int i,n;
+
+	flush_tlb_entry();
+
+	page_mask = ~ (page_size - 1);
+	n = mem_size / (page_size * 2);
+	if (n > 32)
+		return -1;
+
+	for (i = 0; i < n; i++) {
+		unsigned long pagemask = (page_size*2) - 1;
+		unsigned long entryhi, entrylo0, entrylo1;
+
+		entryhi = vaddr & page_mask;
+
+		entrylo0 = (((paddr/(4*1024))<<6) | 07 | (3 << 3));	//1 - uca , 3 - cache
+		paddr += page_size;
+		entrylo1 = (((paddr/(4*1024))<<6) | 07 | (3 << 3));
+		paddr += page_size;
+
+		vaddr += (2*page_size);
+
+		write_c0_index(i);
+		write_c0_pagemask(pagemask);
+		write_c0_entryhi(entryhi);
+		write_c0_entrylo0(entrylo0);
+		write_c0_entrylo1(entrylo1);
+		/* barrier */
+		__asm__ __volatile__("nop;nop;nop;nop;");
+		/* write indexed tlb entry */
+		__asm__ __volatile__("tlbwi");
+	}
+
+	//mmu_dump_tlb();
+	return 0;
+}
+
 /*
  * Perform a memory test. A more complete alternative test can be
  * configured using CFG_ALT_MEMTEST. The complete test loops until
@@ -696,6 +869,10 @@ int do_mem_mtest (cmd_tbl_t *cmdtp, int flag, int argc, char *argv[])
 	ulong	val;
 	ulong	readback;
 
+	set_mips_regs();
+
+	map_mem_tlb(0x00000000,0x30000000,16*1024*1024,256*1024*1024);
+	
 #if defined(CFG_ALT_MEMTEST)
 	vu_long	addr_mask;
 	vu_long	offset;

@@ -1,0 +1,1 @@
+/home/jacky/jackys_house/H350_prj/uboot_h350/msc_spl/msc_boot_jz4770.c
