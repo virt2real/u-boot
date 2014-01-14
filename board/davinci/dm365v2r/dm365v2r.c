@@ -85,37 +85,6 @@ int board_init(void)
 	/* PINMUX4: Select GIO31 (CMOS_RST) & GIO36 (AIC31_RST), image sensor and audio codec reset */
 	REG(PINMUX4) &= 0xfff3fcff;
 
-	/* Reset image sensor */
-	for (i=0; i < 20; i++)
-	{
-		/* Configure GPIO31 as output */
-		writel((readl(&gpio1_base->dir) & ~(1 << 31)), &gpio1_base->dir);
-
-		/* GPIO 31 low */
-		writel((readl(&gpio1_base->out_data) | (0 << 31)),
-						&gpio1_base->out_data);
-
-		/* GPIO 31 high */
-		writel((readl(&gpio1_base->out_data) | (1 << 31)),
-						&gpio1_base->out_data);
-	}
-
-	/* Reset AIC3104 audio codec */
-	for (i=0; i < 20; i++)
-	{
-		/* Configure GPIO36 as output  */
-		writel((readl(&gpio23_base->dir) & ~(1 << 4)), &gpio23_base->dir);
-
-		/*GPIO 36 low */
-		writel((readl(&gpio23_base->out_data) | (0 << 4)),
-						&gpio23_base->out_data);
-
-		/*GPIO 36 high */
-		writel((readl(&gpio23_base->out_data) | (1 << 4)),
-						&gpio23_base->out_data);
-
-	}
-
 	return 0;
 }
 
