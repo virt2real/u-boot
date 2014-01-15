@@ -59,6 +59,30 @@ int board_init(void)
 		writel((readl(&gpio23_base->out_data) | (1 << 27)), &gpio23_base->out_data);
 	}
 
+	#if 0
+	/* Turn on RED led */
+	#define RED_LED_MASK (1 << 10)
+
+	/* Configure GPIO74 as output */
+	writel((readl(&gpio45_base->dir) & ~RED_LED_MASK), &gpio45_base->dir);
+
+	/* GPIO74 high */
+	writel((readl(&gpio45_base->out_data) | RED_LED_MASK), &gpio45_base->out_data);
+
+	/* End turn on RED led */
+	#endif
+
+	/* Turn on GREEN led */
+	#define GREEN_LED_MASK (1 << 9)
+
+	/* Configure GPIO73 as output */
+	writel((readl(&gpio45_base->dir) & ~GREEN_LED_MASK), &gpio45_base->dir);
+
+	/* GPIO73 high */
+	writel((readl(&gpio45_base->out_data) | GREEN_LED_MASK), &gpio45_base->out_data);
+
+	/* End turn on GREEN led */
+
 	/* Enable I2C bus */
 	REG(PINMUX3) |= 0x01400000;
 
