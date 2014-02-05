@@ -64,14 +64,14 @@ HOSTSTRIP	= strip
 #
 
 ifeq ($(HOSTOS),darwin)
-# get major and minor product version (e.g. '10' and '6' for Snow Leopard)
+# get major and minor product version (e.g. '10' and '6' for Snow pard)
 DARWIN_MAJOR_VERSION	= $(shell sw_vers -productVersion | cut -f 1 -d '.')
 DARWIN_MINOR_VERSION	= $(shell sw_vers -productVersion | cut -f 2 -d '.')
 
 os_x_before	= $(shell if [ $(DARWIN_MAJOR_VERSION) -le $(1) -a \
 	$(DARWIN_MINOR_VERSION) -le $(2) ] ; then echo "$(3)"; else echo "$(4)"; fi ;)
 
-# Snow Leopards build environment has no longer restrictions as described above
+# Snow pards build environment has no longer restrictions as described above
 HOSTCC		 = $(call os_x_before, 10, 5, "cc", "gcc")
 HOSTCFLAGS	+= $(call os_x_before, 10, 4, "-traditional-cpp")
 HOSTLDFLAGS	+= $(call os_x_before, 10, 5, "-multiply_defined suppress")
@@ -168,6 +168,10 @@ CPPFLAGS := $(DBGFLAGS) $(OPTFLAGS) $(RELFLAGS)		\
 	-D__KERNEL__
 ifneq ($(CONFIG_SYS_TEXT_BASE),)
 CPPFLAGS += -DCONFIG_SYS_TEXT_BASE=$(CONFIG_SYS_TEXT_BASE)
+endif
+
+ifneq ($(EXTRA_CPPFLAGS),)
+CPPFLAGS += $(EXTRA_CPPFLAGS)
 endif
 
 ifneq ($(RESET_VECTOR_ADDRESS),)
