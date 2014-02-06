@@ -2122,7 +2122,6 @@ extern unsigned int __machine_arch_type;
 #define MACH_TYPE_RD78X00_MASA         2135
 #define MACH_TYPE_SMALLOGGER           2136
 #define MACH_TYPE_CCW9P9215            2137
-#define MACH_TYPE_DM355_LEOPARD        2138
 #define MACH_TYPE_TS219                2139
 #define MACH_TYPE_TNY_A9263            2140
 #define MACH_TYPE_APOLLO               2141
@@ -2629,7 +2628,7 @@ extern unsigned int __machine_arch_type;
 #define MACH_TYPE_LUX_SF9G             2646
 #define MACH_TYPE_LUX_EDK9             2647
 #define MACH_TYPE_HW90240              2648
-#define MACH_TYPE_DM365_LEOPARD        2649
+#define MACH_TYPE_DM365_V2R            2649
 #define MACH_TYPE_MITYOMAPL138         2650
 #define MACH_TYPE_SCAT110              2651
 #define MACH_TYPE_ACER_A1              2652
@@ -28361,17 +28360,6 @@ extern unsigned int __machine_arch_type;
 # define machine_is_ccw9p9215()	(0)
 #endif
 
-#ifdef CONFIG_MACH_DM355_LEOPARD
-# ifdef machine_arch_type
-#  undef machine_arch_type
-#  define machine_arch_type	__machine_arch_type
-# else
-#  define machine_arch_type	MACH_TYPE_DM355_LEOPARD
-# endif
-# define machine_is_dm355_leopard()	(machine_arch_type == MACH_TYPE_DM355_LEOPARD)
-#else
-# define machine_is_dm355_leopard()	(0)
-#endif
 
 #ifdef CONFIG_MACH_TS219
 # ifdef machine_arch_type
@@ -34445,16 +34433,16 @@ extern unsigned int __machine_arch_type;
 # define machine_is_hw90240()	(0)
 #endif
 
-#ifdef CONFIG_MACH_DM365_LEOPARD
+#ifdef CONFIG_MACH_DM365_V2R
 # ifdef machine_arch_type
 #  undef machine_arch_type
 #  define machine_arch_type	__machine_arch_type
 # else
-#  define machine_arch_type	MACH_TYPE_DM365_LEOPARD
+#  define machine_arch_type	MACH_TYPE_DM365_V2R
 # endif
-# define machine_is_dm365_leopard()	(machine_arch_type == MACH_TYPE_DM365_LEOPARD)
+# define machine_is_dm365_v2r()	(machine_arch_type == MACH_TYPE_DM365_V2R)
 #else
-# define machine_is_dm365_leopard()	(0)
+# define machine_is_dm365_v2r()	(0)
 #endif
 
 #ifdef CONFIG_MACH_MITYOMAPL138
