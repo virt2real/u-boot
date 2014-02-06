@@ -595,7 +595,19 @@ int do_nand(cmd_tbl_t * cmdtp, int flag, int argc, char * const argv[])
 				ret = nand->read_oob(nand, off, &ops);
 			else
 				ret = nand->write_oob(nand, off, &ops);
-		} else {
+		} else if (!strcmp(s,".ubl")){
+			struct nand_chip *chip = nand->priv;
+			struct nand_ecclayout *layout_backup;
+
+			layout_backup =  chip->ecc.layout;
+			if (chip->ecc.ubl_layout) {
+				chip->ecc.layout = chip->ecc.ubl_layout;
+			}
+			ret = nand_write_skip_bad(nand, off, &rwsize,
+							  (u_char *)addr);
+			chip->ecc.layout = layout_backup;
+		}
+		else {
 			printf("Unknown nand command suffix '%s'.\n", s);
 			return 1;
 		}
@@ -685,9 +697,10 @@ U_BOOT_CMD(
 	"info - show available NAND devices\n"
 	"nand device [dev] - show or set current device\n"
 	"nand read - addr off|partition size\n"
-	"nand write - addr off|partition size\n"
+	"nand write[.ubl] - addr off|partition size\n"
 	"    read/write 'size' bytes starting at offset 'off'\n"
 	"    to/from memory address 'addr', skipping bad blocks.\n"
+	"     [.ubl] writes ECC code understandable by RBL\n"
 #ifdef CONFIG_CMD_NAND_YAFFS
 	"nand write.yaffs - addr off|partition size\n"
 	"    write 'size' bytes starting at offset 'off' with yaffs format\n"

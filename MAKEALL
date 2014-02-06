@@ -385,6 +385,7 @@ LIST_ARM9="			\
 	davinci_dm355evm	\
 	davinci_dm355leopard	\
 	davinci_dm365evm	\
+	davinci_dm365v2r	\
 	davinci_dm6467evm	\
 "
 

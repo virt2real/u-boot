@@ -972,7 +972,10 @@ static void *boot_get_kernel (cmd_tbl_t *cmdtp, int flag, int argc, char * const
 
 	debug ("   kernel data at 0x%08lx, len = 0x%08lx (%ld)\n",
 			*os_data, *os_len, *os_len);
-
+//	{
+//           volatile unsigned long* THR = (volatile unsigned long*)(0x1c20000);
+//           *THR='>';
+//        }
 	return (void *)img_addr;
 }
 

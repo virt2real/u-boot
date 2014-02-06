@@ -1092,6 +1092,9 @@ smdk6400_config	:	unconfig
 	@$(MKCONFIG) smdk6400 arm arm1176 smdk6400 samsung s3c64xx
 	@echo "CONFIG_NAND_U_BOOT = y" >> $(obj)include/config.mk
 
+davinci_dm365v2r_config :	unconfig
+	@$(MKCONFIG) $(@:_config=) arm arm926ejs dm365v2r davinci davinci
+
 #========================================================================
 # Nios
 #========================================================================
@@ -1124,6 +1127,7 @@ clean:
 	@rm -f $(obj)tools/bmp_logo	   $(obj)tools/easylogo/easylogo  \
 	       $(obj)tools/env/{fw_printenv,fw_setenv}			  \
 	       $(obj)tools/envcrc					  \
+	       $(obj)tools/uflash/uflash	  \
 	       $(obj)tools/gdb/{astest,gdbcont,gdbsend}			  \
 	       $(obj)tools/gen_eth_addr    $(obj)tools/img2srec		  \
 	       $(obj)tools/mkimage	   $(obj)tools/mpc86x_clk	  \

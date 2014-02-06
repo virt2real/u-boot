@@ -31,6 +31,10 @@ LIB	= $(obj)lib$(VENDOR).o
 
 COBJS	:= misc.o davinci_pinmux.o
 
+COBJS-y :=
+COBJS-$(CONFIG_PIN_MUX) += davinci_pin_mux.o
+
+COBJS   += $(COBJS-y)
 SRCS	:= $(SOBJS:.o=.S) $(COBJS:.o=.c)
 OBJS	:= $(addprefix $(obj),$(COBJS))
 SOBJS	:= $(addprefix $(obj),$(SOBJS))
