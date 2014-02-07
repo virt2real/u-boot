@@ -26,7 +26,7 @@
 #include <asm/arch/nand_defs.h>
 #include <asm/arch/gpio_defs.h>
 #include <netdev.h>
-#include "../common/misc.h"
+#include <asm/arch/davinci_misc.h>
 #ifdef CONFIG_DAVINCI_MMC
 #include <mmc.h>
 #include <asm/arch/sdmmc_defs.h>

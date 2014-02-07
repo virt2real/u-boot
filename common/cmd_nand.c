@@ -604,7 +604,7 @@ int do_nand(cmd_tbl_t * cmdtp, int flag, int argc, char * const argv[])
 				chip->ecc.layout = chip->ecc.ubl_layout;
 			}
 			ret = nand_write_skip_bad(nand, off, &rwsize,
-							  (u_char *)addr);
+							  (u_char *)addr, 0);
 			chip->ecc.layout = layout_backup;
 		}
 		else {
